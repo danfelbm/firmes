@@ -4,10 +4,10 @@ export const SITE_NAME = "Firmes por la Patria";
 
 /**
  * URL pública del audio "CALLE" (Supabase Storage, bucket `media`).
- * Placeholder vacío: mientras esté vacío, el AudioDock NO se renderiza.
- * Fase de contenido la reemplaza por la URL real.
+ * Si queda vacía, el AudioDock no se renderiza.
  */
-export const AUDIO_CALLE_URL = "";
+export const AUDIO_CALLE_URL =
+  "https://rfypuobqaaxajjkhnqxx.supabase.co/storage/v1/object/public/media/calle-v3-mezcla.mp3";
 
 /** Enlace de WhatsApp (placeholder; reemplazar con número/canal real). */
 export const WHATSAPP_URL = "https://wa.me/";

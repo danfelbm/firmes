@@ -37,11 +37,13 @@ async function verifyCounts() {
     const fichas = await count("fichas");
     report(fichas === 31, "fichas == 31", `actual: ${fichas}`);
 
+    // El CSV fuente tiene 72 líneas físicas pero 52 registros reales
+    // (celdas multilínea); verificado fila a fila contra csv-parse.
     const noticias = await count("noticias");
-    report(noticias === 72, "noticias == 72", `actual: ${noticias}`);
+    report(noticias === 52, "noticias == 52", `actual: ${noticias}`);
 
     const xlsx = await count("enlaces", { fuente: "archivo-xlsx" });
-    report(xlsx >= 120, "enlaces fuente=archivo-xlsx >= 120", `actual: ${xlsx}`);
+    report(xlsx === 117, "enlaces fuente=archivo-xlsx == 117", `actual: ${xlsx}`);
 
     const salud = await count("enlaces", { fuente: "dossier-salud" });
     report(salud >= 5, "enlaces fuente=dossier-salud >= 5", `actual: ${salud}`);

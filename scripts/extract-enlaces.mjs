@@ -27,7 +27,20 @@ const MESES = {
   enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6,
   julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10, noviembre: 11, diciembre: 12,
 };
-const iso = (y, m, d) => `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+// Valida que sea una fecha real de calendario (la fuente trae p. ej. 29/02/2026,
+// que no existe); si no lo es, devuelve null para no romper el INSERT en Postgres.
+const iso = (y, m, d) => {
+  const date = new Date(Date.UTC(Number(y), Number(m) - 1, Number(d)));
+  if (
+    date.getUTCFullYear() !== Number(y) ||
+    date.getUTCMonth() !== Number(m) - 1 ||
+    date.getUTCDate() !== Number(d)
+  ) {
+    console.warn(`AVISO: fecha inexistente ${d}/${m}/${y} → null`);
+    return null;
+  }
+  return `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+};
 
 function parseFecha(raw) {
   if (raw == null || raw === "") return null;
