@@ -1,4 +1,4 @@
-import { createClient } from "./supabase/server";
+import { createStaticClient } from "./supabase/static";
 
 import type { Database } from "./supabase/types";
 
@@ -10,7 +10,7 @@ export type Enlace = Database["public"]["Tables"]["enlaces"]["Row"];
 
 /** Todas las fichas de la contracaja, ordenadas por `orden` ascendente. */
 export async function getFichas(): Promise<Ficha[]> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data, error } = await supabase
     .from("fichas")
     .select("*")
@@ -21,7 +21,7 @@ export async function getFichas(): Promise<Ficha[]> {
 
 /** Una ficha por slug, o null si no existe. */
 export async function getFichaBySlug(slug: string): Promise<Ficha | null> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data, error } = await supabase
     .from("fichas")
     .select("*")
@@ -33,7 +33,7 @@ export async function getFichaBySlug(slug: string): Promise<Ficha | null> {
 
 /** Las primeras `n` fichas por orden (para destacados en el home). */
 export async function getFichasDestacadas(n: number): Promise<Ficha[]> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data, error } = await supabase
     .from("fichas")
     .select("*")
@@ -68,7 +68,7 @@ export async function getNoticias({
   page = 1,
   perPage = 12,
 }: GetNoticiasParams = {}): Promise<{ rows: Noticia[]; total: number }> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
 
   let query = supabase
     .from("noticias")
@@ -97,7 +97,7 @@ export async function getNoticias({
 
 /** Las `n` noticias más recientes (fecha desc, nulls al final). */
 export async function getNoticiasRecientes(n: number): Promise<Noticia[]> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data, error } = await supabase
     .from("noticias")
     .select("*")
@@ -112,7 +112,7 @@ export async function getMediosYTemas(): Promise<{
   medios: string[];
   temas: string[];
 }> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data, error } = await supabase.from("noticias").select("medio, tema");
   if (error) throw new Error(`getMediosYTemas: ${error.message}`);
 
@@ -133,7 +133,7 @@ export async function getMediosYTemas(): Promise<{
 
 /** Enlaces del archivo, opcionalmente filtrados por tema. */
 export async function getEnlaces(tema?: string): Promise<Enlace[]> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   let query = supabase
     .from("enlaces")
     .select("*")
@@ -149,7 +149,7 @@ export async function getEnlaces(tema?: string): Promise<Enlace[]> {
 export async function getTemasEnlaces(): Promise<
   { tema: string; count: number }[]
 > {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data, error } = await supabase.from("enlaces").select("tema");
   if (error) throw new Error(`getTemasEnlaces: ${error.message}`);
 
@@ -164,7 +164,7 @@ export async function getTemasEnlaces(): Promise<
 
 /** Enlaces del dossier de salud (fuente='dossier-salud'). */
 export async function getEnlacesSalud(): Promise<Enlace[]> {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data, error } = await supabase
     .from("enlaces")
     .select("*")
