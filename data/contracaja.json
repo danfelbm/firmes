@@ -1,0 +1,437 @@
+[
+  {
+    "orden": 1,
+    "slug": "adulto-mayor",
+    "sector": "ADULTO MAYOR",
+    "pregunta": "¿Te imaginas llegar a la vejez sin pensión, sin atención médica garantizada, que tengas que trabajar y además sin las instituciones que hoy te protegen?",
+    "lo_que_dice": "Su forma vicepresidencial plantea que los abuelos tengan que trabajar y producir. \"Abelardo propone reducir el Estado entre un 40% y un 60%, eliminar entidades públicas que considera «burocracia inútil» y trasladar la provisión de servicios al sector privado. No presenta propuestas específicas de protección a la vejez; su programa prioriza «productividad» y señala que no quiere personas «con cartones que no produzcan».\"",
+    "traduccion": "Quiere que los adultos mayores trabajen y produzcan y desmantelar las entidades del Estado que prestan servicios de cuidado y protección social, incluyendo las que atienden a los adultos mayores más vulnerables, para que el mercado los reemplace.",
+    "impacto": "Significa que tendrás que trabajar y no habrán programas como Colombia Mayor, los centros de vida o programas del ICBF, te vas a quedar sin esos apoyos porque Abelardo los considera burocracia que hay que eliminar.",
+    "fuentes": [
+      "https://www.tiktok.com/@vocesco/video/7646908086111751432"
+    ],
+    "icono": "heart-handshake"
+  },
+  {
+    "orden": 2,
+    "slug": "afros",
+    "sector": "AFROS",
+    "pregunta": "¿Te imaginas un gobierno que habla de igualdad pero niega la discriminación racial y desmonta las políticas de reparación histórica que protegen tus derechos?",
+    "lo_que_dice": "\"Abelardo no presenta propuestas específicas para las comunidades afrocolombianas. Su programa se basa en la idea de un Estado mínimo, la eliminación de entidades públicas y la negación de la «ideología» en el Estado, lo que incluye las políticas de enfoque diferencial étnico.\" Además, representó legalmente a Marbelle cuando enfrentó procesos legales por delitos de hostigamiento y racismo contra Francia Marquez",
+    "traduccion": "Bajo la bandera del «mérito» y la reducción del Estado, eliminaría las instituciones, los programas de reparación y las políticas de acción afirmativa que existen para corregir siglos de exclusión estructural de las comunidades negras y afrocolombianas.",
+    "impacto": "Significa que si eres una persona afro del Pacífico, el Caribe o cualquier territorio ancestral, entonces tu comunidad perdería los programas de etnoeducación, atención diferencial y protección territorial, porque Abelardo los ve como «burocracia» y no como derechos.",
+    "fuentes": [
+      "https://www.infobae.com/america/colombia/2022/03/31/abelardo-de-la-espriella-representaria-a-marbelle-ante-las-denuncia-de-racismo-por-ataque-contra-francia-marquez/"
+    ],
+    "icono": "users"
+  },
+  {
+    "orden": 3,
+    "slug": "ambiente",
+    "sector": "AMBIENTE",
+    "pregunta": "¿Te imaginas vivir en un país donde destruyan los páramos y las reservas naturales para extraer petróleo a cualquier costo?",
+    "lo_que_dice": "\"Abelardo afirmó textualmente: «Donde haya páramos y reservas naturales, habrá fracking a lo que dé». Además propone fumigar 330.000 hectáreas con glifosato y bombardear en zonas de ecosistemas estratégicos.\"",
+    "traduccion": "Quiere abrir el territorio nacional a la extracción de hidrocarburos sin restricciones ambientales, incluyendo páramos que son las principales fuentes de agua potable del país, para priorizar la producción de combustibles fósiles.",
+    "impacto": "Significa que si en tu región hay un páramo o una reserva natural, entonces Abelardo autoriza las perforaciones de fracking ahí, y te van a quedar sin el agua que ese ecosistema te provee para tomar, cocinar y regar tus cultivos.",
+    "fuentes": [
+      "https://www.facebook.com/realwestcol/videos/abelardo-de-la-espriella-habla-sobre-el-fracking/946391458221749/",
+      "https://www.youtube.com/shorts/Rz07u7bNl34"
+    ],
+    "icono": "tree-pine"
+  },
+  {
+    "orden": 4,
+    "slug": "animales",
+    "sector": "ANIMALES",
+    "pregunta": "¿Te imaginas un gobierno que defiende la tauromaquia, la caza deportiva y no penaliza el tráfico de fauna silvestre?",
+    "lo_que_dice": "\"Abelardo ha expresado su apoyo a la tauromaquia y a la caza deportiva, y en una entrevista relató con orgullo haber tenido culebras y tortugas como mascotas (fauna silvestre de tenencia ilegal), ha manifestado matar gatos con pólvora en entrevistas en televisión nacional. No propone ninguna política de bienestar animal.\"",
+    "traduccion": "Su gobierno no restringiría espectáculos de maltrato animal como las corridas de toros, no perseguiría el tráfico de fauna silvestre y no avanzaría en legislación de protección animal, revirtiendo los pocos avances logrados.",
+    "impacto": "Significa que si en tu municipio el bienestar animal es una causa importante, entonces con Abelardo en el poder el Estado le dará la espalda a esa agenda y las corridas de toros, la caza y el tráfico de animales silvestres seguirán sin ningún límite real.",
+    "fuentes": [
+      "https://www.youtube.com/watch?v=Wryn_r3d31Q",
+      "https://www.youtube.com/watch?v=Parbw-jbHqI",
+      "https://www.youtube.com/shorts/fhGxAbPlHU0",
+      "https://www.youtube.com/watch?v=L_jh-gnvT6g"
+    ],
+    "icono": "paw-print"
+  },
+  {
+    "orden": 5,
+    "slug": "artes-culturas-y-saberes",
+    "sector": "ARTES, CULTURAS Y SABERES",
+    "pregunta": "¿Te imaginas un país donde el arte y la cultura sean silenciados porque no le sirven a la «productividad económica»?",
+    "lo_que_dice": "\"Abelardo afirma que el arte y las ciencias humanas son \"ideología\" y \"pérdida de tiempo\". Su propuesta es sacar la cultura de las aulas: “Quiero jóvenes que se formen en 11 meses y salgan a facturar”. En sus discursos desprecia la identidad nacional llamando a Colombia \"platanal\" y ataca los festivales y saberes populares asegurando que el Estado no debe financiar \"vagos que no producen\".\"",
+    "traduccion": "Su plan real es asfixiar económicamente la cultura. Eliminará los estímulos a la música, el teatro, las artesanías y el cine nacional. El Ministerio de las Culturas será recortado al mínimo o fusionado bajo su plan de reducir el Estado en un 60%, dejando la cultura viva de los territorios sin un solo peso público.",
+    "impacto": "Significa que si eres artista, músico, artesano, bailarín o gestor cultural en tu región, con Abelardo se acaban los apoyos económicos del Estado para tus proyectos. Las casas de cultura locales, los festivales municipales y las escuelas de música comunitaria van a cerrar porque el gobierno solo apoyará lo que \"facture\" a nivel corporativo, obligándote a abandonar tu arte para poder sobrevivir.",
+    "fuentes": [
+      "https://www.youtube.com/watch?v=8v1_b1yTvak",
+      "https://www.youtube.com/shorts/4aS3e4VQfTY",
+      "https://www.youtube.com/shorts/JU2agErGngw",
+      "https://www.youtube.com/shorts/9o59J0uF4f8"
+    ],
+    "icono": "palette"
+  },
+  {
+    "orden": 6,
+    "slug": "cambio-climatico",
+    "sector": "CAMBIO CLIMÁTICO",
+    "pregunta": "¿Te imaginas un presidente que apuesta todo al petróleo y al fracking mientras el planeta se está quemando y las inundaciones arrasan tus cosechas?",
+    "lo_que_dice": "\"Abelardo se burla abiertamente de la crisis climática global llamándola “ideología barata”. Afirma que los «motores principales» de su economía son «minería, infraestructura, construcción, agrocolombiano» y el petróleo. Propone hacer fracking «a lo que dé» en páramos y reservas, y fumigar 330.000 hectáreas de cultivos con glifosato. No tiene propuestas de reducción de emisiones ni de adaptación climática.\"",
+    "traduccion": "Quiere apostarle a la economía extractiva de combustibles fósiles justo cuando el mundo entero transita hacia energías limpias, agudizando la crisis climática que ya afecta a los campesinos, pescadores y comunidades en zonas costeras e inundables del país.",
+    "impacto": "Significa que si tu territorio está siendo golpeado por sequías más largas, lluvias más intensas o pérdida de cosechas por el cambio climático, entonces Abelardo va a profundizar esos problemas con más fracking y fumigaciones, en vez de protegerte.",
+    "fuentes": [
+      "https://www.youtube.com/shorts/Rz07u7bNl34"
+    ],
+    "icono": "thermometer-sun"
+  },
+  {
+    "orden": 7,
+    "slug": "campesinado",
+    "sector": "CAMPESINADO",
+    "pregunta": "¿Te imaginas que al campesino colombiano dejen de llamarlo campesino y lo obliguen a ser «empresario» o no reciba nada del Estado?",
+    "lo_que_dice": "\"En sus mítines afirma textualmente: “No quiero hablar de campesinos, quiero hablar de emprendedores y empresarios del campo”. Paralelamente, su programa propone liquidar la Agencia Nacional de Tierras (ANT) y la Agencia de Desarrollo Rural (ADR), y ordena fumigar masivamente con glifosato. Además, promueve discursos orientados a legalizar o perdonar judicialmente despojos de tierras bajo la bandera de la \"seguridad jurídica de los inversionistas\".",
+    "traduccion": "Su propuesta real es borrar los derechos constitucionales del campesinado. Al eliminar las agencias de tierras y desarrollo rural, dejará al pequeño productor sin títulos de propiedad, sin asistencia técnica y sin créditos estatales. Su modelo busca que el campesino que no tenga capital para ser \"empresario\" quiebre y termine vendiendo su tierra a precio de huevo a los grandes terratenientes.",
+    "impacto": "Significa que si eres un campesino que vive de su parcela, de su Asociación o de su Cooperativa, con Abelardo vas a quedar completamente desamparado: el Estado ya no te reconocerá como sujeto de derechos, no habrá ANT que te titule tu finca y las avionetas de glifosato van a pasar envenenando tu comida, tus animales y tu agua con la excusa de la guerra contra las drogas.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQFXqdmx/",
+      "https://vt.tiktok.com/ZSQFXweLy/"
+    ],
+    "icono": "wheat"
+  },
+  {
+    "orden": 8,
+    "slug": "ciencia-y-tecnologia",
+    "sector": "CIENCIA Y TECNOLOGÍA",
+    "pregunta": "¿Te imaginas un gobierno que destruye la investigación científica nacional, dejándonos rezagados y obligando a nuestros científicos a huir del país?",
+    "lo_que_dice": "\"Abelardo propone un recorte radical del Estado de entre el 40% y el 60%, lo que desfinanciaría directamente a Minciencias y los laboratorios de las universidades públicas. Su visión de la tecnología se reduce exclusivamente a la vigilancia policial masiva (\"reconocimiento facial, cámaras con IA y drones\") y a la explotación laboral digital, afirmando que los jóvenes solo necesitan \"un teclado y un mouse para empezar a facturar”. Admira abiertamente el modelo de ajuste de Milei en Argentina.\"",
+    "traduccion": "Su propuesta real es eliminar la soberanía científica de Colombia. No invertirá en vacunas, patentes, software propio ni innovación agraria o médica. Copiará el modelo argentino que redujo la inversión en ciencia a un mínimo histórico del 0,14% del PIB, provocando la pérdida de miles de empleos científicos y congelando los salarios de los investigadores. Para él, la ciencia no es progreso, es un gasto inútil.",
+    "impacto": "Significa que si eres estudiante de universidad pública, investigador, desarrollador de software o científico, con Abelardo te vas a quedar sin becas de doctorado, sin recursos para laboratorios y sin proyectos de innovación tecnológica regional. Colombia quedará condenada a comprarle toda la tecnología y las medicinas caras a los países extranjeros, mientras los profesionales más brillantes de tu territorio se verán obligados a empacar maletas e irse del país porque aquí se destruirá el sistema científico.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQF4DdEJ/"
+    ],
+    "icono": "flask-conical"
+  },
+  {
+    "orden": 9,
+    "slug": "derechos-humanos",
+    "sector": "DERECHOS HUMANOS",
+    "pregunta": "¿Te imaginas un país donde el Estado tenga el «derecho» de matar ciudadanos sin juicio, y donde decir que el Derecho Internacional Humanitario es «ideología» sea política de gobierno?",
+    "lo_que_dice": "\"Abelardo ha afirmado en múltiples escenarios «bandido que no se someta, hay que darlo de baja», ha dicho que el DIH es «ideología», ha propuesto salirse de la ONU y la OEA, y ha declarado que Israel «hace lo que tiene que hacer». También propuso armar a «la gente de bien» para que se defienda. Y ha propuesto destripar a quien piense distinto\".",
+    "traduccion": "Quiere un Estado que pueda matar sin rendir cuentas, que no esté sujeto a estándares internacionales de derechos humanos y que criminalice la protesta y la disidencia. La expresión «gente de bien» excluye a quienes él considera sus enemigos: sindicalistas, indígenas, líderes sociales y opositores.",
+    "impacto": "Significa que si eres líder social, defensor de derechos humanos, sindicalista o vives en un territorio de conflicto armado, entonces con Abelardo en el poder el Estado no va a protegerte: va a perseguirte, porque en su lógica quien protesta o defiende derechos es «bandido» al que hay que «dar de baja».",
+    "fuentes": [
+      "https://www.youtube.com/shorts/0gDBTl1ac7s",
+      "https://www.youtube.com/shorts/JpsvHeAbofE",
+      "https://www.youtube.com/shorts/AeSNNOAWncU",
+      "https://www.bbc.com/mundo/articles/c3d2gx7r3kyo LO RESPALDA GENOCIDA PEDERASTA"
+    ],
+    "icono": "scale"
+  },
+  {
+    "orden": 10,
+    "slug": "discapacidad",
+    "sector": "DISCAPACIDAD",
+    "pregunta": "¿Te imaginas un gobierno que borra los subsidios y programas para personas con discapacidad porque considera que quienes no pueden trabajar son un \"gasto inútil\" para el Estado?",
+    "lo_que_dice": "\"Abelardo propone un recorte radical de las instituciones públicas de entre el 40% y el, eliminando ministerios y agencias enteras por considerarlas \"burocracia inútil\". En sus discursos de productividad insiste en que el Estado solo debe apoyar a quienes generen dinero, afirmando: “No quiero gente con cartones que no produzca. Su programa de gobierno no menciona ni una sola vez a la población en situación de discapacidad ni políticas de inclusión social..\"",
+    "traduccion": "Su propuesta real es la exclusión absoluta del sistema de protección social. Al recortar el presupuesto estatal a la mitad y liquidar entidades clave, eliminará por completo los bonos de apoyo, los subsidios alimentarios y los programas de entrega de sillas de ruedas, prótesis o terapias cognitivas. Para su modelo económico, quien no puede \"facturar\" es visto como una carga financiera que el Estado debe dejar de asumir, privatizando el cuidado y dejando la salud de los más vulnerables en manos de la caridad o de la capacidad de pago de cada familia.",
+    "impacto": "Significa que si tienes una discapacidad o cuidas a alguien con discapacidad y dependes de servicios del Estado para rehabilitación, con Abelardo te vas a quedar completamente solo y sin red de apoyo. El recorte masivo destruirá los recursos públicos destinados a tu bienestar, obligando a tu familia a asumir costos impagables en el sector privado para garantizar tu dignidad o tu salud.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQF4DdEJ/",
+      "Documento balance fiscal"
+    ],
+    "icono": "accessibility"
+  },
+  {
+    "orden": 11,
+    "slug": "drogas",
+    "sector": "DROGAS",
+    "pregunta": "¿Te imaginas que fumiguen con glifosato el campo donde tú siembras y que vuelvan los bombardeos sobre comunidades enteras en nombre de la «guerra contra las drogas»?",
+    "lo_que_dice": "\"Abelardo afirmó: «Voy a ordenar el 8 de agosto a comenzar a fumigar las más de 300 mil hectáreas de coca, y bombardear los campamentos de los terroristas guerrilleros». También dijo: «Donde hay coca hay muerte» y propone «perseguir a los jíbaros como ratas».\"",
+    "traduccion": "Propone volver a la política de fumigación aérea con glifosato, prohibida por la Corte Constitucional por sus daños a la salud y al medio ambiente, y retomar los bombardeos sobre territorios campesinos e indígenas donde conviven cultivos ilícitos con comunidades civiles.",
+    "impacto": "Significa que si vives o tienes familia en zonas cocaleras del Putumayo, el Cauca, el Catatumbo o el Pacífico, entonces las fumigaciones de Abelardo van a destruir también tus cultivos de pancoger, contaminar tus fuentes de agua y dejar a tu familia sin alimento.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQFXweLy/",
+      "https://www.youtube.com/shorts/z4cq5dgW5Ps"
+    ],
+    "icono": "spray-can"
+  },
+  {
+    "orden": 12,
+    "slug": "economia",
+    "sector": "ECONOMÍA",
+    "pregunta": "¿Te imaginas un presidente que destruye miles de empleos en tu región y quiebra el comercio de tu barrio con la excusa de \"ahorrar plata\" para el Estado?",
+    "lo_que_dice": "\"Promueve un plan de \"motosierra fiscal\" copiando el modelo de Javier Milei, prometiendo reducir el tamaño del Estado entre un 40% y un 60%, y liquidar entidades públicas completas (como la ANT y la ADR) porque para él son solo \"gasto e ineficiencia\". Cuando la ciudadanía le reclama por el desempleo y el hambre que generan estas medidas, responde con insultos, diciendo textualmente en sus audios privados: \"¡Que coman mierda!. Y solicitaron al Consejo de Estado frenar la aplicación del decreto del salario vital\"",
+    "traduccion": "Su propuesta real es una máquina de destrucción de empleo y consumo. Despedir masivamente a miles de trabajadores del Estado no solo afecta a los funcionarios; saca de circulación miles de millones de pesos de la economía local. Al no haber salarios, la gente deja de comprar, la plata deja de moverse en la calle y la economía popular se asfixia por completo. Además de no garantizar aumentos reales del salario mínimo año tras año",
+    "impacto": "Significa que no tendrás aumentos reales de tu salario. Que el golpe de Abelardo va a terminar quebrando la economía de tu propio barrio. Si despiden a miles de personas en tu región por el recorte del 60%, esas familias ya no tendrán plata para ir a comprar a la tienda de la esquina, ni para pagarle al mototaxista, ni para comprar en la carnicería o la panadería del sector. Al destruirse el empleo público, se destruye el consumo de la gente de a pie, provocando un efecto dominó que terminará quebrando los pequeños negocios locales y empobreciendo a los barrios porque nadie va a tener con qué comprar.",
+    "fuentes": [
+      "Audio coman mierda del drive…Documento de política de balance fiscal.",
+      "https://vt.tiktok.com/ZSQFn9KrL/"
+    ],
+    "icono": "coins"
+  },
+  {
+    "orden": 13,
+    "slug": "educacion",
+    "sector": "EDUCACIÓN",
+    "pregunta": "¿Te imaginas que saquen a los maestros públicos y metan la religión en las aulas de tus hijos, mientras recortan el presupuesto educativo a la mitad?",
+    "lo_que_dice": "\"Abelardo propuso «meter a Dios en las clases» y «sacar a Fecode de la enseñanza», afirmó «no quiero gente con cartones que no produzca» y propuso «reducir el Ministerio de Educación». También señaló que quiere sacar «la ideología de género de los salones de nuestros hijos» y que los jóvenes se formen en «11 meses para salir a facturar».\"",
+    "traduccion": "Quiere eliminar la carrera docente pública, introducir adoctrinamiento religioso en las escuelas, recortar el presupuesto de educación superior y reemplazar la formación integral de los jóvenes por entrenamiento laboral de corto plazo orientado al mercado.",
+    "impacto": "Significa que si tienes hijos en colegios públicos o estudias en una universidad pública, entonces el recorte del Ministerio de Educación de Abelardo va a significar menos maestros, peor calidad y más religión en el aula, en vez de más ciencia, arte y pensamiento crítico.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQF4DdEJ/",
+      "Perfil de estudiante.mp3 del drive",
+      "Política de balance fiscal"
+    ],
+    "icono": "graduation-cap"
+  },
+  {
+    "orden": 14,
+    "slug": "funcion-publica",
+    "sector": "FUNCIÓN PÚBLICA",
+    "pregunta": "¿Te imaginas un presidente que destruye las instituciones del Estado que te atienden para dejar tus derechos en manos de empresas privadas que solo buscan ganar dinero?",
+    "lo_que_dice": "\"Abelardo Propone \"desmantelar el aparato burocrático del Estado\", reduciendo su tamaño de manera lineal entre un 40% y un 60%. En sus declaraciones públicas y redes sociales ha manifestado su intención de acabar con ministerios, agencias y entidades de control, insistiendo en que la provisión de servicios debe pasar totalmente al sector privado. Cuando se le cuestiona por la desprotección absoluta en la que quedarían los ciudadanos, despacha las críticas en sus audios privados con insultos, diciendo: \"¡Que coman mierda!\".",
+    "traduccion": "Su propuesta real es la disolución institucional. Al reducir el Estado a la mitad y eliminar las entidades públicas, el gobierno dejará de garantizar la salud, la educación, la infraestructura y el bienestar social, obligando a que solo quien tenga dinero pueda pagar por estos servicios básicos en el mercado privado.",
+    "impacto": "Significa que si necesitas acudir a un hospital público, registrar una propiedad, resolver un conflicto en un juzgado o pedir apoyo institucional, con Abelardo esas oficinas van a estar cerradas o privatizadas debido al recorte masivo del 60%. Te quedarás sin entidades públicas que vigilen los abusos de las empresas, y si tu región se queda sin presencia institucional, la respuesta de su gobierno será el abandono absoluto y el desprecio por tu bienestar, porque para su modelo el ciudadano común no es una prioridad.",
+    "fuentes": [
+      "Política de balance fiscal"
+    ],
+    "icono": "landmark"
+  },
+  {
+    "orden": 15,
+    "slug": "gestion-del-riesgo",
+    "sector": "GESTIÓN DEL RIESGO",
+    "pregunta": "¿Te imaginas que llegue un desastre natural a tu municipio y no haya capacidad institucional del Estado para atenderte porque la redujeron a la mitad?",
+    "lo_que_dice": "\"Insiste en su plan de \"motosierra\" para reducir el gasto público entre un 40% y un 60%, eliminando fondos especiales y centralizando los recursos únicamente en los sectores productivos corporativos. En su visión, las tragedias climáticas o ambientales se deben resolver con recursos locales o seguros privados, bajo la premisa de que el Estado no puede seguir asumiendo \"gastos asistenciales\" por desastres naturales.\"",
+    "traduccion": "Su propuesta real es el abandono absoluto de las comunidades ante los desastres naturales. Al desfinanciar radicalmente las entidades de socorro y prevención, dejará a los alcaldes y gobernadores sin helicópteros, sin maquinaria pesada, sin subsidios de vivienda de emergencia y sin kits de ayudas para los damnificados. Para su modelo económico, invertir en mitigar el riesgo en un barrio popular o en una vereda afectada es un \"gasto inútil\" porque no genera ganancias inmediatas.",
+    "impacto": "Significa que si tu barrio o tu vereda sufren por un desastre natural, ya sea que se desborde el río, se caiga la única vía de acceso por un derrumbe o se quemen los cultivos por el verano, con Abelardo quedarás completamente desamparado. No habrá UNGRD ni presupuesto nacional que envíe ayuda humanitaria, reubique a las familias en riesgo o reconstruya los puentes caídos..",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQFnUfaC/"
+    ],
+    "icono": "life-buoy"
+  },
+  {
+    "orden": 16,
+    "slug": "indigenas",
+    "sector": "INDÍGENAS",
+    "pregunta": "¿ Te imaginas un gobierno que elimine la protección de los resguardos indígenas para entregarle la selva, el agua y la tierra ancestral a las grandes corporaciones extranjeras?",
+    "lo_que_dice": "\"Califica la propiedad colectiva y los resguardos como \"tierras improductivas\" que frenan el desarrollo económico. Propone eliminar las agencias de tierras y desarrollo rural (ANT y ADR) y recortar el aparato estatal hasta un 60%, argumentando que la consulta previa y las licencias ambientales son \"trabas burocráticas\" que ahuyentan la inversión. Adicionalmente, promueve la creación de bloques de civiles armados para vigilar el territorio bajo un enfoque punitivo de seguridad.\"",
+    "traduccion": "Su propuesta real es el despojo territorial y la vulneración de la autonomía indígena. Al liquidar la Agencia Nacional de Tierras, sepulta cualquier posibilidad de titulación, ampliación o saneamiento de los resguardos. Su meta es levantar las restricciones legales para que las multinacionales puedan explotar la minería, el petróleo y la agroindustria en zonas sagradas sin el consentimiento de las comunidades, debilitando a la Guardia Indígena al imponer civiles armados estatales en sus territorios.",
+    "impacto": "Significa que si eres parte de una comunidad indígena, con Abelardo tu territorio, tu cultura y tu vida quedan en máximo riesgo. El recorte del 60% del Estado dejará a los pueblos indígenas sin presupuesto para salud propia (SISPI), educación bilingüe o planes de salvaguarda. Si defiendes tu territorio frente a la llegada de maquinaria pesada o proyectos privados, la respuesta de su gobierno no será el diálogo, sino la persecución jurídica y el uso de la fuerza militar y de civiles armados, tratándote como un \"bandido\" que bloquea el progreso del país..",
+    "fuentes": [
+      "https://www.youtube.com/shorts/MjRIVoB0Tss",
+      "https://www.youtube.com/shorts/iDW_iwobg5o",
+      "https://www.youtube.com/shorts/iDW_iwobg5o ISRAEL"
+    ],
+    "icono": "mountain"
+  },
+  {
+    "orden": 17,
+    "slug": "infraestructura-y-transporte",
+    "sector": "INFRAESTRUCTURA Y TRANSPORTE",
+    "pregunta": "¿ Te imaginas un país donde las calles de tu barrio se queden llenas de huecos y las vías veredales destruidas porque el presidente decidió que el Estado ya no va a gastar un peso en arreglarlas?",
+    "lo_que_dice": "\"Asegura que el Estado es un administrador ineficiente de la infraestructura y que toda obra pública debe pasar a manos de concesiones privadas bajo el modelo de que \"el que la use, que la pague\". Su plan fiscal exige un recorte drástico de hasta el 60% en los ministerios y entidades nacionales, eliminando la inversión pública directa en proyectos viales y de transporte rural.\"",
+    "traduccion": "Su propuesta real es abandonar la conectividad de las comunidades más necesitadas. Al quitarle el presupuesto al sector público y liquidar las agencias de desarrollo, congelará por completo el arreglo de las vías terciarias que usan los campesinos para sacar sus alimentos y las obras comunitarias en las periferias urbanas. Para su modelo, si una calle o una carretera regional no genera millones en ganancias corporativas a través de peajes costosos, simplemente no se construye ni se mantiene.",
+    "impacto": "Significa que con Abelardo te vas a quedar incomunicado o pagando peajes impagables. Si la vía de acceso a tu vereda se derrumba o la calle principal de tu barrio se destruye, el Gobierno Nacional no enviará maquinaria ni recursos porque recortó los fondos públicos. Las pequeñas obras locales quedarán paralizadas, provocando que el transporte de alimentos sea más caro, que el pasaje del transporte público suba porque ya no habrá subsidios estatales, y que los pequeños transportadores y mototaxistas dañen sus vehículos en vías abandonadas porque para este gobierno la infraestructura solo importa si \"factura\".",
+    "fuentes": [
+      "https://www.youtube.com/shorts/iDW_iwobg5o Entrevista en caracol sobre reducción del estado hasta un 40%."
+    ],
+    "icono": "construction"
+  },
+  {
+    "orden": 18,
+    "slug": "internacional",
+    "sector": "INTERNACIONAL",
+    "pregunta": "¿Te imaginas que Colombia salga de la ONU, la OEA y los organismos de derechos humanos, quedando aislada del mundo y sin protección internacional para sus ciudadanos?",
+    "lo_que_dice": "\"Abelardo ha propuesto explícitamente «salirse de la ONU» y la OEA. En Twitter publicó: «No a la ONU y no a la JEP. Lo que no le sirva a Colombia ni le genere beneficios al país, será suspendido». También declaró que Israel «hace lo que tiene que hacer» en referencia a su ofensiva militar.\"",
+    "traduccion": "Quiere aislar a Colombia de los sistemas multilaterales de cooperación, seguridad colectiva y protección de derechos humanos, eliminando los mecanismos internacionales que hoy protegen a colombianos en el exterior, a las víctimas del conflicto y a los defensores de derechos.",
+    "impacto": "Significa que si tienes familia migrante en el exterior, si eres víctima del conflicto o si dependes de cooperación internacional para tu región, entonces el aislamiento diplomático de Abelardo va a dejarte sin los mecanismos de protección y ayuda que hoy existen gracias a los tratados que él quiere romper.",
+    "fuentes": [
+      "https://youtu.be/9j1Zo-kRmAQ?si=jV9lqbOKg3vSMbK5"
+    ],
+    "icono": "globe"
+  },
+  {
+    "orden": 19,
+    "slug": "interreligioso",
+    "sector": "INTERRELIGIOSO",
+    "pregunta": "¿Te imaginas que el Estado imponga una sola visión religiosa en las escuelas y en las políticas públicas, negando la diversidad espiritual y la separación entre Iglesia y Estado?",
+    "lo_que_dice": "\"Abelardo ha afirmado en múltiples discursos que su alianza es «con Dios y el pueblo colombiano», que va «protegido con la armadura de Dios», que quiere «meter a Dios en las clases» y que la suya es «una batalla espiritual y moral». En Cartago afirmó: «De las escuelas voy a sacar la ideología de género para regresar a Dios». Y antes afirmó ser ateo\"",
+    "traduccion": "Propone gobernar con una visión religioso-nacionalista que impone la fe cristiana conservadora como parámetro de las políticas públicas, en detrimento de la diversidad religiosa, espiritual y secular que existe en Colombia: comunidades indígenas, afrodescendientes, musulmanes, agnósticos y ateos.",
+    "impacto": "Significa que si no compartes la fe religiosa que Abelardo quiere imponer en las aulas y en el Estado, entonces tu cosmovisión, tu fe o tu laicismo van a ser marginados y excluidos de la esfera pública en favor de una visión religiosa única impuesta desde el gobierno.",
+    "fuentes": [
+      "https://www.youtube.com/watch?v=J9q-wGY-X7Y",
+      "https://www.youtube.com/shorts/c9BJ3mxxilE"
+    ],
+    "icono": "church"
+  },
+  {
+    "orden": 20,
+    "slug": "jovenes",
+    "sector": "JÓVENES",
+    "pregunta": "¿Te imaginas un gobierno que en lugar de darte oportunidades de estudio te persiga, te estigmatice y prefiera dejarte sin educación pública para obligarte a ser mano de obra barata?",
+    "lo_que_dice": "\"Propone una educación exprés de 11 meses netamente comercial bajo la premisa de \"salir a facturar\", afirmando que no quiere \"gente con cartones que no produzca\". Además, tanto él como su fórmula vicepresidencial atacan los programas de inclusión social y educación territorial como Jóvenes en Paz, asegurando públicamente que esa iniciativa es \"financiar delincuentes\". Su modelo de seguridad promueve la criminalización, el control mediante civiles armados y la estigmatización de las juventudes de los sectores populares.\"",
+    "traduccion": "Su propuesta real es quitarle a la juventud el derecho a una educación superior digna y transformadora. Al recortar el presupuesto del Estado en un 60%, asfixiará las universidades públicas regionales y eliminará los programas que llevan educación real a las zonas marginadas. Su meta es perseguir y señalar a los jóvenes de las periferias, quitándoles los apoyos sociales para obligarlos a aceptar empleos precarizados y sin derechos estables, tratándolos como un peligro público en lugar de sujetos de derechos.",
+    "impacto": "Significa que si eres joven y sueñas con ir a la universidad o necesitas un apoyo del Estado para salir adelante en tu territorio, con Abelardo esas puertas se van a cerrar. No habrá programas de inclusión ni oportunidades reales de estudio en tu región porque para su gobierno la educación que transforma vidas es vista como un \"gasto inútil\" o un \"incentivo a la delincuencia\". Te tocará resignarte a la persecución en las calles por parte de civiles armados o a trabajar jornadas explotadoras por el mínimo sin opción de ser profesional, porque para su modelo solo vales si produces rápido para las corporaciones.",
+    "fuentes": [
+      "https://www.instagram.com/reel/DZNhYgguEg7/?igsh=cTNiMmc5NG1jNnhu"
+    ],
+    "icono": "sparkles"
+  },
+  {
+    "orden": 21,
+    "slug": "lgbti",
+    "sector": "LGBTI",
+    "pregunta": "¿Te imaginas vivir en un país donde el presidente use su poder para humillar tu identidad, perseguir tus derechos y dejarte desprotegido ante la violencia solo por ser quién eres?",
+    "lo_que_dice": "\"Promueve un discurso abiertamente discriminatorio y de estigmatización contra la diversidad. Un ejemplo claro de su homofobia quedó registrado cuando atacó públicamente al político Juan Daniel Oviedo, afirmando de manera despectiva que tenía \"un problema imposible de solucionar\" debido a su orientación sexual. Bajo la excusa de la \"libertad de opinión\" y el recorte del 60% del Estado, plantea eliminar ministerios, direcciones de derechos humanos y programas de inclusión, calificándolos de \"ideología de género\" y \"gasto innecesario.\"",
+    "traduccion": "Para Abelardo, los derechos LGBTI son «ideología de género» que contamina a los niños. Su gobierno retrocedería en el reconocimiento de parejas del mismo sexo, derechos de adopción, protección contra la discriminación y toda política pública de inclusión de personas diversas.",
+    "impacto": "Significa que si eres una persona LGBTI o tienes hijos en colegios con enfoque de diversidad e inclusión, entonces Abelardo va a usar el poder del Estado para borrar esa protección: fuera de las escuelas, fuera de las políticas públicas y de vuelta a la invisibilización.",
+    "fuentes": [
+      "https://www.youtube.com/shorts/flaiSuOGYbQ"
+    ],
+    "icono": "rainbow"
+  },
+  {
+    "orden": 22,
+    "slug": "lucha-contra-la-corrupcion",
+    "sector": "LUCHA CONTRA LA CORRUPCIÓN",
+    "pregunta": "¿Te imaginas que el candidato «anticorrupción» sea el mismo que llegó a la política con el respaldo de las élites políticas tradicionales que llevan décadas saqueando las regiones?",
+    "lo_que_dice": "\"Abelardo promete crear un «bloque de búsqueda anticorrupción» y acabar con los corruptos «como las ratas». Sin embargo, su candidatura fue avalada y apoyada por sectores del establecimiento político regional y empresarial. Su propuesta de reducir el Estado entre un 40% y un 60% eliminaría también los organismos de control como la Contraloría, la Procuraduría y las veedurías ciudadanas.\"",
+    "traduccion": "La retórica anticorrupción es una herramienta de campaña, no un programa real: sin instituciones de control fortalecidas, sin transparencia en la contratación ni participación ciudadana, el «bloque de búsqueda» es solo una unidad de persecución política disfrazada de justicia.",
+    "impacto": "Significa que si en tu municipio hay contratos amañados, alcaldes que roban o recursos desviados, entonces el recorte institucional de Abelardo va a dejar sin dientes a los organismos de control que hoy te permiten denunciar, mientras su «bloque» solo irá tras sus enemigos políticos.",
+    "fuentes": [
+      "https://www.infobae.com/colombia/2026/05/31/alvaro-uribe-tambien-adhirio-a-abelardo-de-la-espriella-colombia-no-puede-seguir-en-el-camino-de-convertirse-en-la-sucursal-del-chavismo/",
+      "https://www.infobae.com/colombia/2026/05/06/abelardo-de-la-espriella-tendra-el-apoyo-de-la-familia-char-de-cara-a-las-elecciones-presidenciales/",
+      "https://www.instagram.com/p/DZOmNUTiAke/",
+      "https://www.youtube.com/watch?v=pfZ_d3fPMm4",
+      "https://www.bbc.com/mundo/articles/c3d2gx7r3kyo PEDERASTA"
+    ],
+    "icono": "shield-alert"
+  },
+  {
+    "orden": 23,
+    "slug": "mujeres",
+    "sector": "MUJERES",
+    "pregunta": "¿Te imaginas que el candidato que dice defender a las mujeres sea el mismo que las acosa, las minimiza y defiende el aborto como «ruptura moral»?",
+    "lo_que_dice": "\"Abelardo fue ordenado judicialmente a reconocer que «las mujeres votan con inteligencia y criterio» después de hacer comentarios sexistas. Pidió disculpas por hacer referencia sexual a una periodista que dijo sentirse «vulnerada, acosada y asqueada». La Silla Vacía documentó seis episodios de machismo en campaña. En su portal publicó un artículo en contra del aborto llamándolo «ruptura moral».\"",
+    "traduccion": "Más allá del discurso de campaña dirigido a las mujeres, su conducta y sus posiciones reales muestran un candidato que criminaliza el aborto, minimiza el acoso sexual, usa el lenguaje machista y no tiene propuestas concretas para cerrar las brechas de género en salarios, violencia y representación.",
+    "impacto": "Significa que si eres mujer y esperas un gobierno que proteja tu autonomía sobre tu cuerpo, que sancione el acoso sexual y que cierre la brecha salarial, entonces con Abelardo vas a tener un presidente que cree que el aborto es pecado y que el machismo es solo un «chiste mal contado».",
+    "fuentes": [
+      "https://elpais.com/america-colombia/elecciones-presidenciales/2026-06-03/una-jueza-ordena-a-de-la-espriella-reconocer-que-las-mujeres-votan-con-inteligencia-y-criterio.html",
+      "https://www.facebook.com/RTVCnoticias/posts/%EF%B8%8F-abelardo-de-la-espriella-deber%C3%A1-presentar-disculpas-en-un-plazo-de-48-horas-po/1382841657230006/",
+      "https://www.facebook.com/EdnaBonillaSED/videos/el-respeto-a-las-mujeres-no-es-opcional-es-obligatorio-no-podemos-seguir-normali/2003042653634690/"
+    ],
+    "icono": "venus"
+  },
+  {
+    "orden": 24,
+    "slug": "ninez-y-adolescencia",
+    "sector": "NIÑEZ Y ADOLESCENCIA",
+    "pregunta": "¿Te imaginas que bombardeen los territorios donde viven niños y adolescentes, y que en las escuelas reemplacen la educación integral por adoctrinamiento religioso?",
+    "lo_que_dice": "\"Abelardo propone «bombardear los campamentos narcoterroristas» en territorios donde también habitan familias y menores de edad. Ha afirmado «los niños son sagrados» mientras propone volver a políticas de fumigación y bombardeo que históricamente han afectado a la niñez civil. Quiere sacar «la ideología de género» de las escuelas y «meter a Dios en las clases».\"",
+    "traduccion": "Sus propuestas de seguridad ponen en riesgo la integridad de los niños que viven en zonas de conflicto, mientras sus políticas educativas reemplazan la formación crítica, sexual y cívica de los menores por adoctrinamiento religioso y formación laboral acelerada.",
+    "impacto": "Significa que si tienes hijos en una región de conflicto o en una escuela pública, entonces los bombardeos de Abelardo amenazan la seguridad de los niños en esos territorios, y su reforma educativa va a quitar los contenidos de educación sexual y derechos para reemplazarlos por religión.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQFn9KrL/",
+      "https://vt.tiktok.com/ZSQFwEcBf/"
+    ],
+    "icono": "baby"
+  },
+  {
+    "orden": 25,
+    "slug": "participacion-e-innovacion-reforma-politica-reforma-a-la-justicia",
+    "sector": "PARTICIPACIÓN E INNOVACIÓN - REFORMA POLÍTICA - REFORMA A LA JUSTICIA",
+    "pregunta": "¿Te imaginas un gobierno que acaba con la JEP, sale de la ONU, concentra el poder en el ejecutivo y usa los organismos de justicia para perseguir a sus opositores?",
+    "lo_que_dice": "\"Abelardo propone «bombardear los campamentos narcoterroristas» en territorios donde también habitan familias y menores de edad. Ha afirmado «los niños son sagrados» mientras propone volver a políticas de fumigación y bombardeo que históricamente han afectado a la niñez civil. Quiere sacar «la ideología de género» de las escuelas y «meter a Dios en las clases».\" Además, su fórmula vicepresidencial ataca directamente los programas de inclusión y educación territorial en las regiones como Jóvenes en Paz, asegurando públicamente que dicha iniciativa equivale a \"financiar delincuentes.\"",
+    "traduccion": "Sus propuestas de seguridad ponen en riesgo la integridad de los niños que viven en zonas de conflicto, mientras sus políticas educativas reemplazan la formación crítica, sexual y cívica de los menores por adoctrinamiento religioso y formación laboral acelerada. Bajo la narrativa de su campaña, prefieren estigmatizar y tildar de criminales a los adolescentes vulnerables que reciben apoyo estatal para estudiar, en vez de garantizarles rutas de prevención y protección social.",
+    "impacto": "Significa que si tienes hijos en una región de conflicto o en una escuela pública, entonces los bombardeos de Abelardo amenazan la seguridad de los niños en esos territorios, y su reforma educativa va a quitar los contenidos de educación sexual y derechos para reemplazarlos por religión.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQFwEcBf/",
+      "https://www.instagram.com/reel/DZNhYgguEg7/?igsh=cTNiMmc5NG1jNnhu"
+    ],
+    "icono": "vote"
+  },
+  {
+    "orden": 26,
+    "slug": "revolucion-urbana-y-vivienda",
+    "sector": "REVOLUCIÓN URBANA Y VIVIENDA",
+    "pregunta": "¿Te imaginas que te prometan un crédito de vivienda al 2% de interés cuando el Banco de la República presta al 11,25%? ¿Quién te está mintiendo?",
+    "lo_que_dice": "\"Abelardo propuso que los créditos hipotecarios no superen una tasa real del 2%, amenazando con traer bancos extranjeros si la banca nacional no lo cumple. Expertos financieros señalaron que la propuesta es «totalmente inviable» porque la tasa de referencia del Banco de la República está en 11,25% y ningún banco —nacional ni extranjero— presta por debajo de eso.\"",
+    "traduccion": "Es una promesa populista e imposible desde el punto de vista macroeconómico. Ningún gobierno puede obligar a los bancos privados a prestar por debajo del costo del dinero. Su plan de vivienda beneficia a constructores privados y genera más expansión urbana en periferias sin servicios, sin resolver el déficit cualitativo de 5 millones de familias.",
+    "impacto": "Significa que si eres una familia que lleva años ahorrando para comprar vivienda y te ilusionaste con el 2% de interés de Abelardo, entonces ese crédito nunca va a llegar porque su promesa es matemáticamente imposible, y la vivienda que sí se construya será en la periferia sin transporte, parques ni colegios, vas a vivir lejos y sin servicios dignos.",
+    "fuentes": [
+      "https://www.youtube.com/watch?v=eDCXabPH2sA"
+    ],
+    "icono": "home"
+  },
+  {
+    "orden": 27,
+    "slug": "salud",
+    "sector": "SALUD",
+    "pregunta": "¿Te imaginas que el presidente que quiere recortar el 50% del Estado sea el mismo que promete salvar el sistema de salud en 90 días?",
+    "lo_que_dice": "\"En su discurso sectorial de salud, Abelardo propone un «plan de choque en 90 días» para estabilizar el sistema y proteger a las EPS que cumplan estándares. Sin embargo, paralelamente propone reducir el Estado entre un 40% y un 60%, lo que es incompatible con fortalecer la infraestructura pública de salud. Sus citas más sonadas: «En la era del tigre no se nos va a morir nadie por falta de medicamentos».\"",
+    "traduccion": "Su propuesta de salud protege a las EPS privadas que «funcionen» y liquida las que no, sin fortalecer la red pública hospitalaria. El recorte del Estado destruiría el Ministerio de Salud, el INVIMA y los programas de salud pública que hoy previenen enfermedades en comunidades vulnerables.",
+    "impacto": "Significa que si dependes de una EPS en quiebra o de un hospital público en tu municipio, entonces con Abelardo la EPS puede ser liquidada sin garantías de continuidad, y el hospital público puede quedarse sin presupuesto porque el Estado que lo financia va a ser recortado a la mitad.",
+    "fuentes": [
+      "https://www.youtube.com/shorts/YSdzE-0M5dw"
+    ],
+    "icono": "heart-pulse"
+  },
+  {
+    "orden": 28,
+    "slug": "seguridad",
+    "sector": "SEGURIDAD",
+    "pregunta": "¿Te imaginas un gobierno que mata sin juicio a quienes él llame «bandidos», construya 10 megacárceles en la mitad de la nada y le entregue armas a los civiles para que se defiendan solos?",
+    "lo_que_dice": "\"Abelardo repite en todos sus discursos «bandido que no se someta, hay que darlo de baja», ha prometido «10 megacárceles donde no entra ni la señal», propone «armar a la gente de bien para que se defienda», usar reconocimiento facial masivo «como en Israel» y desplegar el ejército en zonas urbanas «sin que me tiemble la mano».\"",
+    "traduccion": "Propone un modelo de seguridad autoritario y punitivista que concentra el poder de matar en el ejecutivo sin controles judiciales, criminaliza la pobreza y la protesta, y traslada la seguridad pública al sector privado y a los civiles armados, generando más violencia, no menos.",
+    "impacto": "Significa que si vives en un barrio popular con problemas de microtráfico, entonces con Abelardo el ejército va a llegar a tu cuadra con «las manos desatadas», el vecino que discrepa puede ser declarado «bandido» sin juicio y tú no tendrás garantías de que no te conviertas en una víctima más de la «mano de hierro». Adiciona, las megacarcees son como tapar una gotera con un balde, llenas el balde y el problema sigue intacto.",
+    "fuentes": [
+      "https://www.youtube.com/shorts/QTwPfB7fx9I",
+      "https://www.youtube.com/shorts/Xty_Y3nxN6E",
+      "https://youtube.com/shorts/Xty_Y3nxN6E?si=PMhaSyzY_2GVzj0P",
+      "https://youtube.com/shorts/pwCLIsZ-VBo?si=PnNMLpwir2sIpTTv"
+    ],
+    "icono": "shield"
+  },
+  {
+    "orden": 29,
+    "slug": "transicion-energetica",
+    "sector": "TRANSICIÓN ENERGÉTICA",
+    "pregunta": "¿Te imaginas apostarle todo al petróleo y el carbón mientras el mundo entero avanza hacia la energía solar, el hidrógeno y el viento, dejando a Colombia rezagada por décadas?",
+    "lo_que_dice": "\"Abelardo propone hacer fracking «a lo que dé» incluso en páramos y reservas, señala que los «motores» de su economía son «minería e infraestructura» y no menciona energías renovables en sus discursos principales. Su programa menciona «turismo sostenible», pero los expertos señalan que quien promueve el fracking sin límites no puede ser creíble en sostenibilidad.\"",
+    "traduccion": "Quiere profundizar el modelo extractivista basado en petróleo y carbón justo cuando la caída del precio del petróleo y la transición global hacia energías limpias hacen que esa apuesta sea una trampa de largo plazo para la economía y el medio ambiente colombiano.",
+    "impacto": "Significa que si vives en una región con potencial solar, eólico o hídrico para el desarrollo energético limpio, entonces el gobierno de Abelardo va a invertir ese potencial en fracking y minería, dejando tu región dependiente del extractivismo y fuera de los mercados de energía del futuro, mientras daña tu tierra.",
+    "fuentes": [
+      "https://www.youtube.com/shorts/Xty_Y3nxN6E",
+      "https://youtube.com/shorts/xG-7WekDxwg?si=eu_0bsZqltzKLDT6",
+      "https://youtube.com/shorts/JDzLMNY1OpM?si=rgYPAM6at2KVJij_"
+    ],
+    "icono": "zap"
+  },
+  {
+    "orden": 30,
+    "slug": "turismo",
+    "sector": "TURISMO",
+    "pregunta": "¿Te imaginas que el candidato al que le preguntan por turismo se ponga a bailar en vez de tener propuestas concretas, y que su único plan sea poner policías en las playas?",
+    "lo_que_dice": "\"En la Vitrina Turística de ANATO, Abelardo dijo que su propuesta es «hacer de Colombia un país seguro para que los turistas recorran el territorio». En un video de TikTok se limitó a bailar. Los medios especializados en turismo señalaron que su propuesta es «superficial» y que ve el turismo «más desde una visión de seguridad», sin propuestas sobre sostenibilidad, cultura, paz o biodiversidad.\"",
+    "traduccion": "No tiene programa de turismo: tiene un discurso de seguridad disfrazado de política turística. Un país donde se fumigan páramos, se bombardean territorios y se ignora la cultura local no atrae turismo internacional de alto valor, sino que espanta la inversión y los viajeros responsables.",
+    "impacto": "Significa que si trabajas en turismo en una región biodiversa, cultural o de naturaleza, entonces la apuesta de Abelardo por la seguridad militarizada y el fracking va a destruir el atractivo de tu destino: nadie va a querer visitar un páramo fumigado ni un territorio bombardeado.",
+    "fuentes": [
+      "https://vt.tiktok.com/ZSQFKGwSf/"
+    ],
+    "icono": "map"
+  },
+  {
+    "orden": 31,
+    "slug": "victimas",
+    "sector": "VÍCTIMAS",
+    "pregunta": "¿Te imaginas que destruyan la JEP, eliminen las entidades de atención a las víctimas y le propongan hundir las lanchas de quienes trabajan por el Caribe?",
+    "lo_que_dice": "\"Abelardo propone acabar con la JEP («hay que acabarla y yo sé cómo hacerlo»), eliminar las entidades públicas de atención a las víctimas del conflicto (incluidas en su propuesta de recortar el Estado 40-60%), y en un video propuso «hundir las lanchas que salgan por el Caribe». También ha afirmado que la JEP es «un directorio político de izquierda radical instituido para perseguir a los héroes de la patria».\"",
+    "traduccion": "Quiere liquidar todo el andamiaje jurídico e institucional construido para verdad, justicia, reparación y garantías de no repetición del conflicto armado. Para él, los héroes son los militares señalados de crímenes y los «bandidos» son las víctimas que exigen justicia.",
+    "impacto": "Significa que si eres víctima del conflicto armado, desplazado, familiar de un desaparecido o beneficiario de reparación, entonces con Abelardo se acaban la JEP, la Unidad de Víctimas y los programas de reparación, y tu proceso de justicia queda en la basura porque para él la JEP «es un circo».",
+    "fuentes": [
+      "https://www.youtube.com/watch?v=JGQMxQATxWs"
+    ],
+    "icono": "flower-2"
+  }
+]
