@@ -1,6 +1,3 @@
-import { Banknote, Building2, HeartPulse } from "lucide-react";
-
-import Card from "@/components/Card";
 import CtaButton from "@/components/CtaButton";
 import FichaCard from "@/components/FichaCard";
 import Hero from "@/components/Hero";
@@ -9,101 +6,33 @@ import QuickAccessBar from "@/components/QuickAccessBar";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import StatCounter from "@/components/StatCounter";
+import saludData from "@/data/salud.json";
+import {
+  getFichasDestacadas,
+  getMediosYTemas,
+  getNoticiasRecientes,
+  getTemasEnlaces,
+} from "@/lib/queries";
 
-// MOCK — Fase 3D conecta datos reales (Supabase: fichas, noticias, enlaces).
-const fichasMock = [
-  {
-    sector: "Justicia",
-    pregunta:
-      "¿Puede impartir justicia quien construyó su fortuna defendiendo a los que la evaden?",
-    icono: "gavel",
-    slug: "justicia",
-  },
-  {
-    sector: "Salud",
-    pregunta:
-      "¿Qué propone para tu EPS alguien que litiga a favor del negocio y no del paciente?",
-    icono: "heart-pulse",
-    slug: "salud",
-  },
-  {
-    sector: "Seguridad",
-    pregunta:
-      "¿Mano dura para quién? Su historial de clientes responde antes que su discurso.",
-    icono: "shield",
-    slug: "seguridad",
-  },
-  {
-    sector: "Campo",
-    pregunta:
-      "¿Qué sabe del campesino que madruga quien nunca ha pisado una vereda sin escoltas?",
-    icono: "tractor",
-    slug: "campo",
-  },
-  {
-    sector: "Educación",
-    pregunta:
-      "¿Universidad pública o privilegio? Lo que su programa calla sobre tus hijos.",
-    icono: "graduation-cap",
-    slug: "educacion",
-  },
-  {
-    sector: "Economía popular",
-    pregunta:
-      "¿Qué le espera al tendero, al rebuscador y a la empleada doméstica con su modelo?",
-    icono: "piggy-bank",
-    slug: "economia-popular",
-  },
-];
+// ISR: el contenido editorial cambia poco; se refresca cada hora.
+export const revalidate = 3600;
 
-// MOCK — Fase 3D conecta datos reales.
-const noticiasMock = [
-  {
-    titular:
-      "El abogado de los poderosos: los clientes que marcaron la carrera de De la Espriella",
-    medio: "El Espectador",
-    fecha: "2024-09-15",
-    resumen:
-      "Un repaso por dos décadas de litigios en los que el hoy candidato representó a políticos condenados, empresarios investigados y estructuras señaladas por la justicia colombiana.",
-    link: "https://www.elespectador.com/",
-  },
-  {
-    titular:
-      "De la firma al búnker: el entramado empresarial detrás del 'Tigre'",
-    medio: "La Silla Vacía",
-    fecha: "2023-06-02",
-    resumen:
-      "Sociedades, fundaciones y oficinas satélite: la radiografía del conglomerado jurídico-mediático que hoy financia y amplifica la campaña presidencial del abogado cordobés.",
-    link: "https://www.lasillavacia.com/",
-  },
-  {
-    titular:
-      "Las frases del candidato: cuando el rugido contradice el expediente",
-    medio: "Cuestión Pública",
-    fecha: "2025-11-20",
-    resumen:
-      "Comparamos diez promesas de tarima con los casos que el candidato litigó como abogado. El contraste entre el discurso patriótico y la práctica profesional es el hallazgo central.",
-    link: "https://www.cuestionpublica.com/",
-  },
-];
+// Cita textual del candidato, documentada en data/expediente-ddhh.json
+// (sección "Palestina y DIH", fuente: Publimetro, 13 ago 2025).
+const citaExpediente =
+  "El estado de Israel, el primer ministro Netanyahu, está haciendo lo que tiene que hacer para defender a su pueblo, y es lo mismo que voy a hacer yo para defender a Colombia. Cueste lo que cueste.";
 
-// MOCK — Fase 3D conecta datos reales.
-const temasArchivoMock = [
-  "Paramilitarismo",
-  "Clientes condenados",
-  "Negocio de la salud",
-  "DDHH y DIH",
-  "Víctimas",
-  "Falsos positivos",
-  "Tierras",
-  "Financiación de campaña",
-  "Medios y propaganda",
-  "Justicia",
-  "Élites regionales",
-  "Declaraciones públicas",
-];
+const casosSalud = saludData.items.slice(0, 3);
 
-export default function Home() {
+export default async function Home() {
+  const [fichas, noticias, { medios }, temasEnlaces] = await Promise.all([
+    getFichasDestacadas(6),
+    getNoticiasRecientes(3),
+    getMediosYTemas(),
+    getTemasEnlaces(),
+  ]);
+  const totalEnlaces = temasEnlaces.reduce((sum, t) => sum + t.count, 0);
+
   return (
     <main>
       <Hero />
@@ -125,9 +54,14 @@ export default function Home() {
             </p>
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {fichasMock.map((ficha, i) => (
+            {fichas.map((ficha, i) => (
               <Reveal key={ficha.slug} delay={i * 80}>
-                <FichaCard {...ficha} />
+                <FichaCard
+                  sector={ficha.sector}
+                  pregunta={ficha.pregunta}
+                  icono={ficha.icono}
+                  slug={ficha.slug}
+                />
               </Reveal>
             ))}
           </div>
@@ -146,7 +80,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
-              kicker="14 años de prensa"
+              kicker="18 años de prensa"
               title="Hemeroteca del Tigre"
               highlight="Tigre"
               highlightColor="blue"
@@ -157,17 +91,23 @@ export default function Home() {
             </p>
           </Reveal>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {noticiasMock.map((noticia, i) => (
-              <Reveal key={noticia.link + noticia.fecha} delay={i * 80}>
-                <NewsCard {...noticia} />
+            {noticias.map((noticia, i) => (
+              <Reveal key={noticia.slug} delay={i * 80}>
+                <NewsCard
+                  titular={noticia.titular}
+                  medio={noticia.medio ?? "Prensa"}
+                  fecha={noticia.fecha ?? noticia.created_at}
+                  resumen={noticia.resumen}
+                  link={noticia.link}
+                />
               </Reveal>
             ))}
           </div>
           <Reveal delay={160}>
             <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-3">
-              <StatCounter value="72" label="Artículos" />
-              <StatCounter value="14" label="Años de registro" />
-              <StatCounter value="30+" label="Medios" />
+              <StatCounter value="52" label="Artículos" />
+              <StatCounter value="18" label="Años de registro (2008–2026)" />
+              <StatCounter value={`${medios.length}`} label="Medios" />
             </div>
           </Reveal>
           <Reveal delay={220}>
@@ -188,19 +128,19 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-widest text-red">
                 Expediente DDHH y DIH
               </p>
-              <blockquote className="mx-auto mt-6 max-w-3xl text-[clamp(1.4rem,3vw,2.25rem)] font-extrabold leading-snug text-white">
+              <blockquote className="mx-auto mt-6 max-w-3xl text-[clamp(1.25rem,2.6vw,2rem)] font-extrabold leading-snug text-white">
                 <span className="text-yellow" aria-hidden="true">
                   &ldquo;
                 </span>
-                Quien aspira a comandar las Fuerzas Armadas debe responder
-                primero por lo que defendió en los estrados.
+                {citaExpediente}
                 <span className="text-yellow" aria-hidden="true">
                   &rdquo;
                 </span>
               </blockquote>
-              {/* MOCK — Fase 3D conecta la cita real del expediente */}
-              <p className="mt-4 text-sm font-medium text-muted">
-                Expediente ciudadano · 7 secciones documentadas
+              <p className="mt-5 text-sm font-medium text-muted">
+                — Abelardo de la Espriella, agosto de 2025, en plena ofensiva
+                sobre Gaza (Publimetro). Una de las 7 secciones del expediente
+                ciudadano.
               </p>
               <div className="mt-9">
                 <CtaButton href="/expediente-ddhh" variant="red">
@@ -222,33 +162,32 @@ export default function Home() {
               highlight="salud"
             />
             <p className="mt-6 max-w-2xl text-muted">
-              Tres claves para entender qué intereses defiende el candidato
-              cuando habla de tu EPS, tu medicina y tu hospital.
+              Mientras promete salvar la salud, su círculo cercano vive de los
+              contratos del sistema: un jefe de campaña condenado, clínicas con
+              recursos públicos y un bufete que contrata con el Estado.
             </p>
           </Reveal>
-          {/* MOCK — Fase 3D conecta datos reales del dossier */}
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            <Reveal delay={0}>
-              <Card icon={Banknote} title="Los clientes del sector">
-                EPS intervenidas, clínicas investigadas y aseguradoras en
-                pleito: el portafolio de la firma habla del modelo de salud que
-                defendería desde la Presidencia.
-              </Card>
-            </Reveal>
-            <Reveal delay={80}>
-              <Card icon={Building2} title="El entramado societario">
-                Sociedades, fundaciones y participaciones cruzadas conectan la
-                oficina jurídica con actores clave del negocio de la salud en
-                Colombia.
-              </Card>
-            </Reveal>
-            <Reveal delay={160}>
-              <Card icon={HeartPulse} title="Lo que está en juego">
-                Tu cita médica, tus medicamentos y tu hospital público: el
-                dossier traduce los intereses del candidato a consecuencias
-                concretas para el paciente.
-              </Card>
-            </Reveal>
+            {casosSalud.map((caso, i) => (
+              <Reveal key={caso.url} delay={i * 80}>
+                <article className="flex h-full flex-col rounded-xl border border-white/10 bg-navy/80 p-7 transition-transform duration-200 hover:-translate-y-1">
+                  <span className="self-start rounded-full bg-blue/20 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-blue">
+                    {caso.medio}
+                  </span>
+                  <h3 className="yellow-tick mt-5 flex-1 text-lg font-bold leading-snug text-white">
+                    {caso.titulo}
+                  </h3>
+                  <a
+                    href={caso.url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="mt-5 text-sm font-bold text-yellow transition-colors hover:text-white"
+                  >
+                    Ver la investigación <span aria-hidden="true">→</span>
+                  </a>
+                </article>
+              </Reveal>
+            ))}
           </div>
           <Reveal delay={220}>
             <div className="mt-12 text-center">
@@ -276,19 +215,23 @@ export default function Home() {
           </Reveal>
           <Reveal delay={100}>
             <div className="mt-10 flex flex-wrap gap-3">
-              {temasArchivoMock.map((tema) => (
+              {temasEnlaces.map(({ tema, count }) => (
                 <span
                   key={tema}
                   className="rounded-full border border-white/15 bg-navy-2/80 px-4 py-2 text-sm font-semibold text-white/85"
                 >
-                  {tema}
+                  {tema}{" "}
+                  <span className="font-bold text-yellow">({count})</span>
                 </span>
               ))}
             </div>
           </Reveal>
           <Reveal delay={180}>
             <div className="mt-14 flex flex-col items-center gap-8">
-              <StatCounter value="130+" label="Enlaces verificados" />
+              <StatCounter
+                value={`${totalEnlaces}`}
+                label="Fuentes documentadas"
+              />
               <CtaButton href="/archivo" variant="red">
                 Entrar al Archivo
               </CtaButton>
