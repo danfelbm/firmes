@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta "Firmes por la Patria" (estilo defensoresdelapatria) */
+  --color-navy: #0d0d2b;
+  --color-navy-2: #101035;
+  --color-navy-3: #161650;
+  --color-yellow: #ffd23f;
+  --color-red: #e63329;
+  --color-blue: #2d5bff;
+  --color-cream: #f5f3ec;
+  --color-ink: #0a0a20;
+  --color-muted: #b8b8cf;
+
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-navy);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--color-yellow);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    padding-top: clamp(4rem, 8vw, 7rem);
+    padding-bottom: clamp(4rem, 8vw, 7rem);
+  }
+
+  /* Subrayado corto amarillo bajo títulos de cards (estilo del original) */
+  .yellow-tick {
+    position: relative;
+    padding-bottom: 0.9rem;
+  }
+  .yellow-tick::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2.75rem;
+    height: 4px;
+    background: var(--color-yellow);
+    border-radius: 2px;
+  }
+
+  .text-glow-yellow {
+    text-shadow: 0 0 40px rgb(255 210 63 / 0.35);
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.7s ease-out both;
+  }
+
+  .animate-flag-wave {
+    animation: flag-wave 14s ease-in-out infinite alternate;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flag-wave {
+  0% {
+    transform: translateX(-3%) skewY(-1.2deg) scale(1.04);
+  }
+  50% {
+    transform: translateX(0%) skewY(0.8deg) scale(1.06);
+  }
+  100% {
+    transform: translateX(3%) skewY(-0.6deg) scale(1.04);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
