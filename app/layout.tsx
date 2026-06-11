@@ -3,6 +3,11 @@ import { Poppins } from "next/font/google";
 
 import "./globals.css";
 
+import AudioDock from "@/components/AudioDock";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import WhatsAppButton from "@/components/WhatsAppButton";
+
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
@@ -36,7 +41,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={poppins.variable}>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+        <AudioDock />
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }
