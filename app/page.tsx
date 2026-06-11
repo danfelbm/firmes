@@ -99,6 +99,7 @@ export default async function Home() {
                   fecha={noticia.fecha ?? noticia.created_at}
                   resumen={noticia.resumen}
                   link={noticia.link}
+                  compacto
                 />
               </Reveal>
             ))}

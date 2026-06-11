@@ -3,6 +3,7 @@ import {
   Image as ImageIcon,
   Link2,
   Play,
+  StickyNote,
   type LucideIcon,
 } from "lucide-react";
 
@@ -63,6 +64,31 @@ export default function EnlaceCard({ enlace }: EnlaceCardProps) {
       })
     : null;
 
+  // Las "notas" del archivo (filas de contexto sin URL en la fuente) se
+  // muestran como texto no clickeable, con acento amarillo.
+  if (!enlace.url) {
+    return (
+      <div className="flex items-start gap-4 rounded-xl border border-yellow/25 bg-navy-3/60 p-5">
+        <span className="mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-yellow text-ink">
+          <StickyNote size={18} strokeWidth={2.25} aria-hidden="true" />
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="text-[0.6rem] font-bold uppercase tracking-wide text-yellow">
+            Nota del archivo
+          </span>
+          <span className="mt-1 block font-semibold leading-snug text-white">
+            {enlace.titulo}
+          </span>
+          {enlace.observacion ? (
+            <span className="mt-1.5 block text-sm leading-relaxed text-muted">
+              {enlace.observacion}
+            </span>
+          ) : null}
+        </span>
+      </div>
+    );
+  }
+
   return (
     <a
       href={enlace.url}
@@ -93,7 +119,7 @@ export default function EnlaceCard({ enlace }: EnlaceCardProps) {
           {enlace.titulo}
         </span>
         {enlace.observacion ? (
-          <span className="mt-1.5 line-clamp-3 block text-sm leading-relaxed text-muted">
+          <span className="mt-1.5 block text-sm leading-relaxed text-muted">
             {enlace.observacion}
           </span>
         ) : null}

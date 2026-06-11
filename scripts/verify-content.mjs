@@ -42,8 +42,9 @@ async function verifyCounts() {
     const noticias = await count("noticias");
     report(noticias === 52, "noticias == 52", `actual: ${noticias}`);
 
+    // 117 filas con URL + 4 notas de texto sin URL preservadas del xlsx.
     const xlsx = await count("enlaces", { fuente: "archivo-xlsx" });
-    report(xlsx === 117, "enlaces fuente=archivo-xlsx == 117", `actual: ${xlsx}`);
+    report(xlsx === 121, "enlaces fuente=archivo-xlsx == 121", `actual: ${xlsx}`);
 
     const salud = await count("enlaces", { fuente: "dossier-salud" });
     report(salud >= 5, "enlaces fuente=dossier-salud >= 5", `actual: ${salud}`);

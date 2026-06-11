@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
     <a
       href={WHATSAPP_URL}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       className="fixed bottom-5 right-5 z-40 flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-ink/50 transition-transform hover:-translate-y-0.5"
       aria-label="Escríbenos por WhatsApp"
     >

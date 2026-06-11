@@ -122,7 +122,7 @@ async function seedEnlaces() {
       titulo: e.titulo ?? e.title ?? "",
       url: e.url ?? e.link ?? "",
       tipo: e.tipo ?? null,
-      observacion: e.observacion ?? null,
+      observacion: e.comentario ?? e.observacion ?? null,
       fuente: "dossier-salud",
       orden: e.orden ?? i,
     }));

@@ -932,12 +932,22 @@
   {
     "tema": "Acuerdo de Paz",
     "fecha": null,
+    "titulo": "Paz urbana",
+    "url": "",
+    "tipo": "nota",
+    "observacion": "Abelardo no tiene una propuesta de “paz urbana” negociada, sino de seguridad de guerra (“paz romana”, “la paz no se negocia”) aplicada también a las ciudades, con fuerte militarización e inspiración en Bukele.",
+    "fuente": "archivo-xlsx",
+    "orden": 16
+  },
+  {
+    "tema": "Acuerdo de Paz",
+    "fecha": null,
     "titulo": "- Cita: “Lo cierto es que no han servido. Ni uno solo de esos procesos de paz ha traído verdadera tranquilidad a Colombia. La paz no se mendiga ni se negocia con criminales: la paz se impone con la fuerza legítima de las armas del Estado y las leyes de la República.”",
     "url": "https://defensoresdelapatria.com/la-paz-no-se-negocia-abelardo-de-la-espriella/",
     "tipo": ": Columna/nota oficial en el portal de su campaña y movimiento (“Defensores de la Patria”)",
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 16
+    "orden": 17
   },
   {
     "tema": "Acuerdo de Paz",
@@ -947,7 +957,7 @@
     "tipo": "Entrevista de agencia EFE reproducida por El Heraldo",
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 17
+    "orden": 18
   },
   {
     "tema": "Acuerdo de Paz",
@@ -957,7 +967,7 @@
     "tipo": null,
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 18
+    "orden": 19
   },
   {
     "tema": "Acuerdo de Paz",
@@ -967,7 +977,7 @@
     "tipo": null,
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 19
+    "orden": 20
   },
   {
     "tema": "Acuerdo de Paz",
@@ -977,7 +987,7 @@
     "tipo": "Nota de medio internacional (Infobae) que sistematiza su plan de seguridad y su rechazo a diálogos de paz.",
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 20
+    "orden": 21
   },
   {
     "tema": "Acuerdo de Paz",
@@ -987,7 +997,7 @@
     "tipo": null,
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 21
+    "orden": 22
   },
   {
     "tema": "Acuerdo de Paz",
@@ -997,7 +1007,7 @@
     "tipo": "es-us.noticias.yahoo. Nota de síntesis periodística con base en su programa",
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 22
+    "orden": 23
   },
   {
     "tema": "Acuerdo de Paz",
@@ -1007,7 +1017,7 @@
     "tipo": "Entrevista en Noticias Caracol (medio nacional, registro audiovisual público)",
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 23
+    "orden": 24
   },
   {
     "tema": "Acuerdo de Paz",
@@ -1017,7 +1027,7 @@
     "tipo": "Entrevista en Noticias Caracol (medio nacional, registro audiovisual público)",
     "observacion": null,
     "fuente": "archivo-xlsx",
-    "orden": 24
+    "orden": 25
   },
   {
     "tema": "Economía",
@@ -1101,13 +1111,23 @@
   },
   {
     "tema": "Turismo",
+    "fecha": null,
+    "titulo": "Intervenciones de Abelardo",
+    "url": "",
+    "tipo": "nota",
+    "observacion": null,
+    "fuente": "archivo-xlsx",
+    "orden": 1
+  },
+  {
+    "tema": "Turismo",
     "fecha": "2026-02-27",
     "titulo": "Vine a la Vitrina Turística de Anato para decirles que voy a hacer de Colombia un país seguro, donde todos los colombianos puedan recorre",
     "url": "https://www.facebook.com/watch/?v=1241917041463566",
     "tipo": "Video",
     "observacion": "Menciona que impulsará la seguridad en el turismo. No está mal la afirmación, pero en general sus intervenciones referentes al turismo se basan en ello solamente. Lo cual si bien es pertinente es poco profundo.",
     "fuente": "archivo-xlsx",
-    "orden": 1
+    "orden": 2
   },
   {
     "tema": "Turismo",
@@ -1117,7 +1137,7 @@
     "tipo": "Video",
     "observacion": "Basicamente se pone a bailar.  No es criticable en sí, sin embargo sus menciones respecto al turismo son superficiales y más de espectaculo.",
     "fuente": "archivo-xlsx",
-    "orden": 2
+    "orden": 3
   },
   {
     "tema": "Turismo",
@@ -1127,7 +1147,17 @@
     "tipo": "Video",
     "observacion": "Interactua en un pueblo con la gente, haciendo referencia a que va a apoyar el turismo. No indica mayor aspecto concreto, diferente a promover la seguridad.   Sin embargo es un formato que vende, se recomienda Iván pudiera grabar un video en un destino turistico Colombiano, interactuando con las personas.",
     "fuente": "archivo-xlsx",
-    "orden": 3
+    "orden": 4
+  },
+  {
+    "tema": "Turismo",
+    "fecha": null,
+    "titulo": "Intervenciones del candidato Vicepresidencial",
+    "url": "",
+    "tipo": "nota",
+    "observacion": null,
+    "fuente": "archivo-xlsx",
+    "orden": 5
   },
   {
     "tema": "Turismo",
@@ -1137,7 +1167,17 @@
     "tipo": "Video",
     "observacion": "El candidato presidencial fué ministro de Comercio, industria y turismo, sus intervenciones son pocas, cortas, pero que dan cuenta de una visión más integral respecto al sector turistico, hace mención igualmente al fomento de la seguridad, a mejorar el empleo, el fomento de una politica de estado turistica, incentivos fiscales, y regulaciones sencillas, garantizar la formalización y fomento de infraestructura.  Estos aspectos son correctos, sin embargo destaca que no se menciona la relación con el ambiente, la cultura, la paz y la sostenibilidad que son de importancia clara en nuestro país biodiverso y que hacen parte de las propuestas de Iván.   Sin embargo es importante que Iván pudiera referirse de mánera más especifica para el sector",
     "fuente": "archivo-xlsx",
-    "orden": 4
+    "orden": 6
+  },
+  {
+    "tema": "Turismo",
+    "fecha": null,
+    "titulo": "Otros",
+    "url": "",
+    "tipo": "nota",
+    "observacion": null,
+    "fuente": "archivo-xlsx",
+    "orden": 7
   },
   {
     "tema": "Turismo",
@@ -1147,7 +1187,7 @@
     "tipo": "Video",
     "observacion": "En este pograma indican que el programa de turismo de Iván es mejor que el de Abelardo.",
     "fuente": "archivo-xlsx",
-    "orden": 5
+    "orden": 8
   },
   {
     "tema": "Turismo",
@@ -1157,7 +1197,7 @@
     "tipo": "Analisis de prensa",
     "observacion": "La devi es un medio especializado en turismo, realizan un analisis de ambas propuestas, en donde se concuerda que Abelardo ve al turismo, más desde una visión de seguridad, mientras que la propuesta de Iván es más integral.",
     "fuente": "archivo-xlsx",
-    "orden": 6
+    "orden": 9
   },
   {
     "tema": "Turismo",
@@ -1167,6 +1207,6 @@
     "tipo": "Programa de Gobierno",
     "observacion": "Menciona la promocion del turismo sostenible.   Si bien es pertinente, se pone en duda que quien promueve el fracking \"a lo que marque\", sea quien vaya a cumplir una agenda de sostenibilidad.",
     "fuente": "archivo-xlsx",
-    "orden": 7
+    "orden": 10
   }
 ]

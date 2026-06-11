@@ -4,6 +4,8 @@ type NewsCardProps = {
   fecha: string; // ISO o parseable por Date
   resumen: string;
   link: string;
+  /** true = teaser de 3 líneas (home); false = resumen completo (hemeroteca). */
+  compacto?: boolean;
 };
 
 export default function NewsCard({
@@ -12,6 +14,7 @@ export default function NewsCard({
   fecha,
   resumen,
   link,
+  compacto = false,
 }: NewsCardProps) {
   const fechaFormateada = new Date(fecha).toLocaleDateString("es-CO", {
     year: "numeric",
@@ -32,7 +35,9 @@ export default function NewsCard({
       <h3 className="yellow-tick mt-5 text-lg font-bold leading-snug text-white">
         {titular}
       </h3>
-      <p className="mt-4 line-clamp-3 flex-1 text-sm leading-relaxed text-muted">
+      <p
+        className={`mt-4 flex-1 text-sm leading-relaxed text-muted ${compacto ? "line-clamp-3" : ""}`}
+      >
         {resumen}
       </p>
       <a

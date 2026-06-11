@@ -128,6 +128,28 @@ for (const sheetName of wb.SheetNames) {
     return true;
   };
 
+  // Filas de texto SIN URL (notas de contexto y rótulos de grupo de la hoja):
+  // se preservan como tipo "nota" con url vacía para no perder contenido fuente.
+  const pushNota = (row) => {
+    const cells = row
+      .map((c) => (c == null ? "" : String(c).trim()))
+      .filter(Boolean);
+    if (!cells.length) return false;
+    orden += 1;
+    enlaces.push({
+      tema,
+      fecha: null,
+      titulo: cells[0],
+      url: "",
+      tipo: "nota",
+      observacion: cells.length > 1 ? cells.slice(1).join(" — ") : null,
+      fuente: "archivo-xlsx",
+      orden,
+    });
+    porHoja[sheetName] += 1;
+    return true;
+  };
+
   // Detectar layout tabular: fila de encabezado con "Fecha" y "Titulo" en celdas distintas
   let headerRow = -1;
   for (let i = 0; i < Math.min(rows.length, 10); i++) {
@@ -169,6 +191,12 @@ for (const sheetName of wb.SheetNames) {
     }
     continue;
   }
+  // Rótulos de sección escritos ANTES de la fila de encabezado (p. ej. Turismo:
+  // "Intervenciones de Abelardo") también se preservan como notas.
+  for (let i = 0; i < headerRow; i++) {
+    if (rows[i].some((c) => c != null && String(c).trim())) pushNota(rows[i]);
+  }
+
   const headers = rows[headerRow].map((c) => (typeof c === "string" ? c.trim().toLowerCase() : ""));
   const colIdx = (re) => headers.findIndex((h) => re.test(h));
   const cFecha = colIdx(/fecha/);
@@ -198,8 +226,10 @@ for (const sheetName of wb.SheetNames) {
       tipo: cTipo >= 0 ? row[cTipo] : null,
       observacion: cObs >= 0 ? row[cObs] : null,
     });
-    if (!kept && row.some((c) => c != null && String(c).trim())) {
-      console.warn(`AVISO [${sheetName}] fila ${i + 1} sin URL válida descartada: ${JSON.stringify(row).slice(0, 120)}`);
+    const rowHasAnyUrl = row.some((c) => isUrl(c)) || lrow.some((l) => isUrl(l));
+    if (!kept && !rowHasAnyUrl && row.some((c) => c != null && String(c).trim())) {
+      pushNota(row);
+      console.warn(`AVISO [${sheetName}] fila ${i + 1} sin URL conservada como nota: ${JSON.stringify(row).slice(0, 120)}`);
     }
   }
 }
@@ -208,13 +238,13 @@ for (const sheetName of wb.SheetNames) {
 let ok = true;
 const fail = (msg) => { console.error("ASSERT FAILED:", msg); ok = false; };
 
-// NOTA: el conteo real verificado del archivo "(3).xlsx" es 117 filas con URL válida.
-// La estimación original (≥120) provenía de otra versión del archivo. Filas sin URL
-// (descartadas por diseño): 1 en "Acuerdo de paz" ("Paz urbana") + separadores de Turismo
-// + fila de ejemplo de plantilla en Educación.
+// Conteo real del "(3).xlsx": 117 filas con URL válida + 4 filas de texto sin URL
+// preservadas como tipo "nota" (la nota "Paz urbana" y los rótulos de grupo de Turismo).
+// Solo se descarta la fila de ejemplo de plantilla (pagina.ejemplo.com).
 if (enlaces.length < 115) fail(`total ${enlaces.length} < 115`);
 enlaces.forEach((e, i) => {
-  if (!e.url || !/https?:\/\//.test(e.url)) fail(`enlace ${i}: URL inválida`);
+  const esNota = e.tipo === "nota";
+  if (!esNota && (!e.url || !/https?:\/\//.test(e.url))) fail(`enlace ${i}: URL inválida`);
   if (!e.titulo) fail(`enlace ${i}: sin título`);
 });
 
