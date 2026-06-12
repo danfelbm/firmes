@@ -46,7 +46,7 @@ export default function VictimaBlock({ bloque, numero }: VictimaBlockProps) {
       {bloque.anotacion ? (
         <div className="mt-7">
           <p className="text-xs font-bold uppercase tracking-widest text-blue">
-            Anotación
+            Objeción de los enemigos de la patria
           </p>
           <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted">
             {bloque.anotacion}

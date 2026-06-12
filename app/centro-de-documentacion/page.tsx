@@ -7,16 +7,18 @@ import Reveal from "@/components/Reveal";
 import { getEnlaces, getTemasEnlaces, type Enlace } from "@/lib/queries";
 
 export const metadata: Metadata = {
-  title: "El Archivo de la Patria",
+  title: "Centro de Documentación de la Patria",
   description:
-    "123 fuentes documentadas sobre Abelardo de la Espriella: videos, notas de prensa y documentos organizados por tema. El respaldo de cada afirmación del portal.",
+    "Todo lo que se ha dicho y publicado sobre el Tigre y su equipo: videos, notas de prensa y documentos organizados por tema para su consulta. Aquí no se esconde nada.",
 };
 
-type ArchivoPageProps = {
+type CentroDeDocumentacionPageProps = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export default async function ArchivoPage({ searchParams }: ArchivoPageProps) {
+export default async function CentroDeDocumentacionPage({
+  searchParams,
+}: CentroDeDocumentacionPageProps) {
   const params = await searchParams;
   const temaParam = Array.isArray(params.tema) ? params.tema[0] : params.tema;
 
@@ -43,18 +45,18 @@ export default async function ArchivoPage({ searchParams }: ArchivoPageProps) {
       <section className="bg-navy section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <Badge>{total} fuentes documentadas</Badge>
+            <Badge>{`${total} fuentes · Transparencia total`}</Badge>
             <h1 className="mt-8 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-white">
-              El <span className="text-yellow">Archivo</span> de la Patria
+              Centro de <span className="text-yellow">Documentación</span> de
+              la Patria
             </h1>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
               aria-hidden="true"
             />
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted">
-              Videos, notas de prensa y documentos organizados por tema: el
-              material de consulta completo detrás de cada afirmación de este
-              portal.
+              Todo lo que se ha dicho y publicado sobre el Tigre y su equipo,
+              organizado por tema para su consulta. Aquí no se esconde nada.
             </p>
           </Reveal>
           <Reveal delay={100}>

@@ -4,7 +4,7 @@ type NewsCardProps = {
   fecha: string; // ISO o parseable por Date
   resumen: string;
   link: string;
-  /** true = teaser de 3 líneas (home); false = resumen completo (hemeroteca). */
+  /** true = teaser de 3 líneas (home); false = resumen completo (prensa). */
   compacto?: boolean;
 };
 

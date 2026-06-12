@@ -23,11 +23,11 @@ export default function PropuestasRiesgosTable({
               Propuesta
             </th>
             <th className="px-6 py-4 text-xs font-bold uppercase tracking-widest">
-              Riesgo para tus derechos
+              Objeciones
             </th>
             {hayComentarios ? (
               <th className="px-6 py-4 text-xs font-bold uppercase tracking-widest">
-                Comentario
+                Comentarios
               </th>
             ) : null}
           </tr>
@@ -70,7 +70,7 @@ export default function PropuestasRiesgosTable({
               {fila.propuesta}
             </p>
             <p className="mt-5 text-xs font-bold uppercase tracking-widest text-blue">
-              Riesgo para tus derechos
+              Objeciones
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               {fila.riesgo}
@@ -78,7 +78,7 @@ export default function PropuestasRiesgosTable({
             {fila.comentario ? (
               <>
                 <p className="mt-5 text-xs font-bold uppercase tracking-widest text-red">
-                  Comentario
+                  Comentarios
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
                   {fila.comentario}

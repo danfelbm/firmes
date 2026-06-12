@@ -35,7 +35,7 @@ export default function Pagination({
 
   return (
     <nav
-      aria-label="Paginación de la hemeroteca"
+      aria-label="Paginación de la sala de prensa"
       className="mt-14 flex flex-wrap items-center justify-center gap-2"
     >
       {page > 1 ? (

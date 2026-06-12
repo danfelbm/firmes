@@ -81,7 +81,7 @@ export default function AudioDock() {
             <p className="min-w-0 flex-1 truncate text-sm font-bold text-white">
               CALLE{" "}
               <span className="font-medium text-muted">
-                — el sonido de la calle
+                — la calle ya canta
               </span>
             </p>
             <button

@@ -9,9 +9,9 @@ import StatCounter from "@/components/StatCounter";
 import { getMediosYTemas, getNoticias } from "@/lib/queries";
 
 export const metadata: Metadata = {
-  title: "Hemeroteca del Tigre",
+  title: "El Tigre en los Medios",
   description:
-    "52 artículos de prensa, 18 años de registro sobre Abelardo de la Espriella.",
+    "Desde 2008, los principales medios del país le han dedicado al Tigre 52 artículos, columnas e investigaciones. Los reproducimos completos, con sus fuentes, con gratitud.",
 };
 
 const PER_PAGE = 12;
@@ -25,7 +25,7 @@ function first(value: string | string[] | undefined): string | undefined {
   return Array.isArray(value) ? value[0] : value;
 }
 
-export default async function HemerotecaPage({
+export default async function PrensaPage({
   searchParams,
 }: {
   searchParams: SearchParams;
@@ -63,26 +63,30 @@ export default async function HemerotecaPage({
       <section className="bg-navy section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <Badge>Hemeroteca · 2008–2026</Badge>
+            <Badge>Sala de prensa · 2008–2026</Badge>
             <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-white">
-              Hemeroteca del <span className="text-blue">Tigre</span>
+              El Tigre en los <span className="text-blue">Medios</span>
             </h1>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
               aria-hidden="true"
             />
             <p className="mt-6 max-w-2xl text-muted">
-              La prensa lleva años documentando lo que la campaña prefiere
-              olvidar. Este es el registro: medio por medio, año por año, cada
-              nota con su enlace original.
+              Desde 2008, los principales medios del país le han dedicado al
+              Tigre 52 artículos, columnas e investigaciones. Una figura que no
+              deja a nadie indiferente. Los reproducimos completos, con sus
+              fuentes, con gratitud.
             </p>
           </Reveal>
 
           <Reveal delay={120}>
             <div className="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-3">
-              <StatCounter value="52" label="Artículos" />
-              <StatCounter value="18" label="Años de registro" />
-              <StatCounter value={String(medios.length)} label="Medios" />
+              <StatCounter value="52" label="Artículos nos dedicaron" />
+              <StatCounter value="18" label="Años en los medios" />
+              <StatCounter
+                value={String(medios.length)}
+                label="Medios hablan del Tigre"
+              />
             </div>
           </Reveal>
 
@@ -104,7 +108,7 @@ export default async function HemerotecaPage({
                       resumen={
                         noticia.resumen.trim()
                           ? noticia.resumen
-                          : "Resumen no disponible — abre la nota original."
+                          : "Resumen no disponible — abra la nota original."
                       }
                       link={noticia.link}
                     />
@@ -115,18 +119,18 @@ export default async function HemerotecaPage({
                 total={total}
                 page={page}
                 perPage={PER_PAGE}
-                baseHref="/hemeroteca"
+                baseHref="/prensa"
                 searchParams={filtrosActivos}
               />
             </>
           ) : (
             <div className="mt-10 rounded-xl border border-white/10 bg-navy-2/60 px-8 py-20 text-center">
               <p className="text-2xl font-extrabold text-white">
-                El Tigre no encontró nada con esos filtros
+                Ni los enemigos de la patria encontraron algo con esos filtros.
               </p>
               <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-muted">
-                Prueba con otro término de búsqueda, cambia de medio o de año,
-                o limpia los filtros para volver al archivo completo.
+                Pruebe con otro término de búsqueda, cambie de medio o de año,
+                o limpie los filtros para volver a la colección completa.
               </p>
             </div>
           )}

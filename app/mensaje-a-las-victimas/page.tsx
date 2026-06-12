@@ -17,32 +17,31 @@ type Victimas = {
 
 const victimas = victimasJson as unknown as Victimas;
 
-const introFallback =
-  "Más de 9 millones de víctimas del conflicto armado han construido, durante años, caminos de verdad, justicia y reparación. Estas son las declaraciones y propuestas del candidato que ponen esos derechos en riesgo — con sus fuentes originales, palabra por palabra.";
-
 export const metadata: Metadata = {
-  title: "La Voz de las Víctimas",
+  title: "Mensaje a las Víctimas",
   description:
-    "Las declaraciones y propuestas de Abelardo de la Espriella que ponen en riesgo los derechos de más de 9 millones de víctimas del conflicto armado: 8 bloques documentados con fuentes y la tabla de propuestas vs. riesgos.",
+    "El candidato tiene un mensaje directo para las víctimas del conflicto armado. Lo reproducimos sin editar, palabra por palabra, con sus fuentes.",
 };
 
-export default function LaVozDeLasVictimasPage() {
+export default function MensajeALasVictimasPage() {
   return (
     <main>
       {/* Encabezado */}
       <section className="bg-navy section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <Badge>9+ millones de víctimas tienen memoria</Badge>
+            <Badge>El Tigre habla claro</Badge>
             <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-white">
-              La Voz de las <span className="text-yellow">Víctimas</span>
+              Mensaje a las <span className="text-yellow">Víctimas</span>
             </h1>
             <span
               className="mt-6 block h-1 w-14 rounded-full bg-yellow"
               aria-hidden="true"
             />
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted">
-              {victimas.intro ?? introFallback}
+              El candidato tiene un mensaje directo para las víctimas del
+              conflicto armado. Lo reproducimos sin editar, palabra por
+              palabra, con sus fuentes.
             </p>
           </Reveal>
         </div>
@@ -59,20 +58,22 @@ export default function LaVozDeLasVictimasPage() {
         </div>
       </section>
 
-      {/* Propuestas vs. riesgos */}
+      {/* El programa y sus pequeños detalles */}
       <section className="bg-navy section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-white">
-              Propuestas vs. <span className="text-yellow">riesgos</span>
+              El programa y sus pequeños{" "}
+              <span className="text-yellow">detalles</span>
             </h2>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
               aria-hidden="true"
             />
             <p className="mt-6 max-w-2xl text-muted">
-              Lo que el programa de gobierno propone, frente a los derechos
-              que quedarían comprometidos.
+              Lo que propone el programa de gobierno, junto a las objeciones y
+              comentarios de los abogados aguafiestas. Para que usted decida
+              con toda la información.
             </p>
           </Reveal>
           <Reveal delay={120}>
@@ -82,8 +83,8 @@ export default function LaVozDeLasVictimasPage() {
           </Reveal>
           <Reveal delay={180}>
             <div className="mt-16 text-center">
-              <CtaButton href="/expediente-ddhh" variant="red">
-                Abrir el Expediente DDHH
+              <CtaButton href="/compromisos" variant="red">
+                Conozca nuestros compromisos
               </CtaButton>
             </div>
           </Reveal>

@@ -35,12 +35,12 @@ export default function NewsFilters({ medios, temas, anios }: NewsFiltersProps) 
     }
     params.delete("page");
     const qs = params.toString();
-    router.replace(qs ? `/hemeroteca?${qs}` : "/hemeroteca");
+    router.replace(qs ? `/prensa?${qs}` : "/prensa");
   }
 
   function limpiar() {
     setQ("");
-    router.replace("/hemeroteca");
+    router.replace("/prensa");
   }
 
   return (

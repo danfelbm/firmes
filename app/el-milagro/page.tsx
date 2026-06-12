@@ -6,12 +6,12 @@ import Reveal from "@/components/Reveal";
 import { getFichas } from "@/lib/queries";
 
 export const metadata: Metadata = {
-  title: "La Contracaja",
+  title: "El Milagro, sector por sector",
   description:
-    "31 fichas sectoriales que desmontan el discurso de Abelardo de la Espriella: lo que dice vs. lo que significa para tu vida, sector por sector.",
+    "Los 31 milagros del Tigre, sector por sector: su palabra textual, la explicación en cristiano y lo que le toca a usted. Con fuentes que dan fe. Transparencia total.",
 };
 
-export default async function LaContracajaPage() {
+export default async function ElMilagroPage() {
   const fichas = await getFichas();
 
   return (
@@ -19,24 +19,25 @@ export default async function LaContracajaPage() {
       <section className="section-padding mx-auto max-w-7xl px-6">
         <Reveal>
           <div className="max-w-3xl">
-            <Badge>31 fichas sectoriales</Badge>
+            <Badge>Colombia Patria Milagro</Badge>
             <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.25rem)] font-extrabold leading-tight text-white">
-              La <span className="text-yellow">Contracaja</span>
+              El <span className="text-yellow">Milagro</span>, sector por
+              sector
             </h1>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
               aria-hidden="true"
             />
             <p className="mt-6 text-lg leading-relaxed text-muted">
-              Cada ficha desarma el discurso con un método triangular:{" "}
-              <strong className="font-bold text-yellow">lo que dice</strong>{" "}
-              Abelardo con sus propias palabras, la{" "}
-              <strong className="font-bold text-blue">
-                traducción pedagógica
+              La palabra del Tigre explicada con el cariño que merece:{" "}
+              <strong className="font-bold text-yellow">lo que dijo</strong>,
+              con sus propias palabras; lo que significa{" "}
+              <strong className="font-bold text-blue">en cristiano</strong>; y{" "}
+              <strong className="font-bold text-red">
+                lo que le toca a usted
               </strong>{" "}
-              de lo que realmente propone y el{" "}
-              <strong className="font-bold text-red">impacto cotidiano</strong>{" "}
-              que tendría en tu vida. 31 sectores, con fuentes verificables.
+              en su vida diaria. 31 sectores, 31 milagros, con las fuentes que
+              dan fe. Transparencia total.
             </p>
           </div>
         </Reveal>

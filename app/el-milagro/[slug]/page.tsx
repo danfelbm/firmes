@@ -12,6 +12,50 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+/**
+ * Complemento del título "El Milagro …" con el artículo correcto por sector.
+ * Para slugs no contemplados se cae al formato neutro "de: SECTOR".
+ */
+const COMPLEMENTO_MILAGRO: Record<string, string> = {
+  "adulto-mayor": "del Adulto Mayor",
+  afros: "de los Afros",
+  ambiente: "del Ambiente",
+  animales: "de los Animales",
+  "artes-culturas-y-saberes": "de las Artes, las Culturas y los Saberes",
+  "cambio-climatico": "del Cambio Climático",
+  campesinado: "del Campesinado",
+  "ciencia-y-tecnologia": "de la Ciencia y la Tecnología",
+  "derechos-humanos": "de los Derechos Humanos",
+  discapacidad: "de la Discapacidad",
+  drogas: "de las Drogas",
+  economia: "de la Economía",
+  educacion: "de la Educación",
+  "funcion-publica": "de la Función Pública",
+  "gestion-del-riesgo": "de la Gestión del Riesgo",
+  indigenas: "de los Pueblos Indígenas",
+  "infraestructura-y-transporte": "de la Infraestructura y el Transporte",
+  internacional: "Internacional",
+  interreligioso: "Interreligioso",
+  jovenes: "de los Jóvenes",
+  lgbti: "LGBTI",
+  "lucha-contra-la-corrupcion": "de la Lucha contra la Corrupción",
+  mujeres: "de las Mujeres",
+  "ninez-y-adolescencia": "de la Niñez y la Adolescencia",
+  "participacion-e-innovacion-reforma-politica-reforma-a-la-justicia":
+    "de la Participación, la Reforma Política y la Justicia",
+  "revolucion-urbana-y-vivienda": "de la Revolución Urbana y la Vivienda",
+  salud: "de la Salud",
+  seguridad: "de la Seguridad",
+  "transicion-energetica": "de la Transición Energética",
+  turismo: "del Turismo",
+  victimas: "de las Víctimas",
+};
+
+function tituloMilagro(slug: string, sector: string): string {
+  const complemento = COMPLEMENTO_MILAGRO[slug] ?? `de: ${sector}`;
+  return `El Milagro ${complemento}`;
+}
+
 export async function generateStaticParams() {
   const fichas = await getFichas();
   return fichas.map((ficha) => ({ slug: ficha.slug }));
@@ -22,9 +66,9 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const ficha = await getFichaBySlug(slug);
-  if (!ficha) return { title: "Ficha no encontrada — La Contracaja" };
+  if (!ficha) return { title: "Milagro no encontrado — El Milagro" };
   return {
-    title: `${ficha.sector} — La Contracaja`,
+    title: tituloMilagro(ficha.slug, ficha.sector),
     description: ficha.pregunta,
   };
 }
@@ -45,17 +89,17 @@ export default async function FichaPage({ params }: PageProps) {
         <Reveal>
           <nav aria-label="Miga de pan">
             <Link
-              href="/la-contracaja"
+              href="/el-milagro"
               className="text-sm font-bold text-yellow transition-colors hover:text-white"
             >
-              <span aria-hidden="true">←</span> La Contracaja
+              <span aria-hidden="true">←</span> El Milagro
             </Link>
           </nav>
 
           <header className="mt-8">
-            <Badge>{`Ficha N°${ficha.orden} de 31`}</Badge>
+            <Badge>{`Milagro N°${ficha.orden} de 31`}</Badge>
             <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.5rem)] font-extrabold leading-tight text-white">
-              {ficha.sector}
+              {tituloMilagro(ficha.slug, ficha.sector)}
             </h1>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
@@ -73,16 +117,16 @@ export default async function FichaPage({ params }: PageProps) {
 
         {anterior || siguiente ? (
           <nav
-            aria-label="Otras fichas"
+            aria-label="Otros milagros"
             className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2"
           >
             {anterior ? (
               <Link
-                href={`/la-contracaja/${anterior.slug}`}
+                href={`/el-milagro/${anterior.slug}`}
                 className="group rounded-xl border border-white/10 bg-navy-2/80 p-5 transition-all duration-200 hover:-translate-y-1 hover:border-yellow/40"
               >
                 <span className="text-xs font-bold uppercase tracking-wide text-muted">
-                  <span aria-hidden="true">←</span> Ficha anterior
+                  <span aria-hidden="true">←</span> Milagro anterior
                 </span>
                 <span className="mt-2 block font-bold text-white transition-colors group-hover:text-yellow">
                   {anterior.sector}
@@ -93,11 +137,11 @@ export default async function FichaPage({ params }: PageProps) {
             )}
             {siguiente ? (
               <Link
-                href={`/la-contracaja/${siguiente.slug}`}
+                href={`/el-milagro/${siguiente.slug}`}
                 className="group rounded-xl border border-white/10 bg-navy-2/80 p-5 text-right transition-all duration-200 hover:-translate-y-1 hover:border-yellow/40 sm:col-start-2"
               >
                 <span className="text-xs font-bold uppercase tracking-wide text-muted">
-                  Ficha siguiente <span aria-hidden="true">→</span>
+                  Milagro siguiente <span aria-hidden="true">→</span>
                 </span>
                 <span className="mt-2 block font-bold text-white transition-colors group-hover:text-yellow">
                   {siguiente.sector}
@@ -108,8 +152,8 @@ export default async function FichaPage({ params }: PageProps) {
         ) : null}
 
         <div className="mt-14 text-center">
-          <CtaButton href="/hemeroteca" variant="outline">
-            Explorar la Hemeroteca
+          <CtaButton href="/prensa" variant="outline">
+            El Tigre en los medios
           </CtaButton>
         </div>
       </article>

@@ -53,11 +53,11 @@ export default function ExpedienteSection({
 
         <Reveal delay={100}>
           <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-12">
-            {/* Lo que ha dicho / propuesto */}
+            {/* Nuestra palabra */}
             <div>
               <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-red">
                 <Megaphone size={16} strokeWidth={2.5} aria-hidden="true" />
-                Lo que ha dicho / propuesto
+                Nuestra palabra
               </p>
               <ul className="mt-6 space-y-5">
                 {seccion.dichos.map((dicho) => (
@@ -74,11 +74,11 @@ export default function ExpedienteSection({
               </ul>
             </div>
 
-            {/* En riesgo si gana */}
+            {/* Lo que advierten los enemigos de la patria */}
             <div>
               <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-blue">
                 <ShieldAlert size={16} strokeWidth={2.5} aria-hidden="true" />
-                En riesgo si gana
+                Lo que advierten los enemigos de la patria
               </p>
               <ul className="mt-6 space-y-5">
                 {seccion.riesgos.map((riesgo) => (
@@ -122,9 +122,14 @@ export default function ExpedienteSection({
                 className="mt-0.5 shrink-0"
                 aria-hidden="true"
               />
-              <p className="text-sm font-semibold leading-relaxed md:text-base">
-                {seccion.notaCierre}
-              </p>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest">
+                  Nota de los abogados aguafiestas
+                </p>
+                <p className="mt-2 text-sm font-semibold leading-relaxed md:text-base">
+                  {seccion.notaCierre}
+                </p>
+              </div>
             </div>
           </Reveal>
         ) : null}

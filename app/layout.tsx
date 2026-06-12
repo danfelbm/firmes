@@ -19,16 +19,16 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://firmes.vercel.app";
 
 export const metadata: Metadata = {
   title: {
-    default: "Firmes por la Patria — La verdad sobre Abelardo de la Espriella",
+    default: "Firmes por la Patria — El Tigre como es, completo",
     template: "%s | Firmes por la Patria",
   },
   description:
-    "Veeduría ciudadana sobre el candidato Abelardo de la Espriella: la Contracaja de 31 fichas, 14 años de hemeroteca, el expediente de DDHH y DIH, la voz de las víctimas y el archivo completo de fuentes.",
+    "Todo lo que Abelardo de la Espriella ha dicho y hecho: el Milagro sector por sector, 18 años en los medios, sus compromisos con el mundo y su equipo de confianza. Sin recortes. Con orgullo.",
   metadataBase: new URL(siteUrl),
   openGraph: {
     title: "Firmes por la Patria",
     description:
-      "Lo que dice Abelardo vs. lo que significa para tu vida. Veeduría ciudadana, elecciones Colombia 2026.",
+      "El portal del Tigre: la palabra de Abelardo de la Espriella, completa y con sus fuentes. Sin recortes. Con orgullo. Colombia 2026.",
     locale: "es_CO",
     type: "website",
   },

@@ -6,9 +6,9 @@ import Reveal from "@/components/Reveal";
 import saludData from "@/data/salud.json";
 
 export const metadata: Metadata = {
-  title: "El Negocio de la Salud",
+  title: "Nuestros Aliados en la Salud",
   description:
-    "Dossier documentado: mientras Abelardo de la Espriella promete salvar la salud, su círculo cercano vive de los contratos del sistema. Casos, condenas y fuentes.",
+    "Conozca a los hombres de confianza del Tigre y su amplia experiencia en el sistema de salud colombiano — experiencia tan notable que la gran prensa nacional les ha dedicado investigaciones completas. Las reproducimos con gratitud.",
 };
 
 type ItemSalud = {
@@ -20,29 +20,27 @@ type ItemSalud = {
 
 const items: ItemSalud[] = saludData.items;
 
-export default function NegocioDeLaSaludPage() {
+export default function EquipoSaludPage() {
   return (
     <main>
       {/* Encabezado */}
       <section className="bg-navy section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <Badge>Dossier · Salud</Badge>
+            <Badge>El equipo del Milagro</Badge>
             <h1 className="mt-8 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-white">
-              El <span className="text-yellow">Negocio</span> de la Salud
+              Nuestros <span className="text-yellow">Aliados</span> en la Salud
             </h1>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
               aria-hidden="true"
             />
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted">
-              Mientras el candidato promete que &ldquo;no se nos va a morir
-              nadie por falta de medicamentos&rdquo;, su círculo cercano vive de
-              los contratos del sistema de salud: su jefe de campaña fue
-              condenado por irregularidades en un contrato de hospital, su mano
-              derecha controla clínicas que reciben recursos públicos y su
-              bufete contrata con el Estado. Aquí están los casos, documentados
-              y con fuentes.
+              El Milagro de la Salud no se hace solo: se hace con un equipo.
+              Conozca a los hombres de confianza del Tigre y su amplia
+              experiencia en el sistema de salud colombiano — experiencia tan
+              notable que la gran prensa nacional les ha dedicado
+              investigaciones completas. Las reproducimos aquí con gratitud.
             </p>
           </Reveal>
         </div>
@@ -72,7 +70,8 @@ export default function NegocioDeLaSaludPage() {
                     rel="noopener noreferrer nofollow"
                     className="mt-auto pt-5 text-sm font-bold text-yellow transition-colors hover:text-white"
                   >
-                    Ver la investigación <span aria-hidden="true">→</span>
+                    Ver el reconocimiento de la prensa{" "}
+                    <span aria-hidden="true">→</span>
                   </a>
                 </article>
               </Reveal>
@@ -86,12 +85,13 @@ export default function NegocioDeLaSaludPage() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
             <p className="text-lg leading-relaxed text-muted">
-              Estos seis casos son parte de un archivo más grande: 123 fuentes
-              documentadas sobre el candidato, organizadas por tema.
+              Estos reconocimientos hacen parte de una colección más amplia:
+              todo lo que se ha publicado sobre el Tigre y su equipo, organizado
+              por tema y a su disposición. Aquí no se esconde nada.
             </p>
             <div className="mt-9">
-              <CtaButton href="/archivo" variant="yellow">
-                Explorar todo el Archivo
+              <CtaButton href="/centro-de-documentacion" variant="yellow">
+                Visitar el Centro de Documentación
               </CtaButton>
             </div>
           </Reveal>

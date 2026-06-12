@@ -30,8 +30,8 @@ function getDominio(url: string): string | null {
 }
 
 /**
- * El método triangular de la Contracaja: lo que dice → traducción
- * pedagógica → impacto cotidiano, más las fuentes verificables.
+ * El método triangular del Milagro: palabra del Tigre → en cristiano →
+ * lo que le toca a usted, más las fuentes que dan fe.
  */
 export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
   const fuentes = (Array.isArray(ficha.fuentes) ? ficha.fuentes : []).filter(
@@ -40,7 +40,7 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
 
   const bloques: Bloque[] = [
     {
-      etiqueta: "Lo que dice Abelardo",
+      etiqueta: "Palabra del Tigre",
       texto: ficha.lo_que_dice,
       icon: Quote,
       labelClass: "text-yellow",
@@ -49,8 +49,8 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
       esCita: true,
     },
     {
-      etiqueta: "Traducción pedagógica",
-      subtitulo: "Lo que realmente propone",
+      etiqueta: "En cristiano",
+      subtitulo: "Lo que significa, explicado con cariño",
       texto: ficha.traduccion,
       icon: BookOpen,
       labelClass: "text-blue",
@@ -58,8 +58,8 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
       borderClass: "border-t-blue",
     },
     {
-      etiqueta: "Impacto cotidiano",
-      subtitulo: "Lo que significa para tu vida",
+      etiqueta: "Lo que le toca a usted",
+      subtitulo: "El milagro aplicado a su vida",
       texto: ficha.impacto,
       icon: TriangleAlert,
       labelClass: "text-red",
@@ -125,7 +125,7 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
                 <LinkIcon size={20} strokeWidth={2.25} aria-hidden="true" />
               </span>
               <h2 className="text-xs font-bold uppercase tracking-widest text-muted">
-                Fuentes
+                Fuentes que dan fe
               </h2>
             </div>
             <ul className="mt-5 space-y-3">

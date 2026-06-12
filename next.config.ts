@@ -11,6 +11,42 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    // Rutas históricas del portal; conservamos los enlaces ya compartidos.
+    return [
+      {
+        source: "/la-contracaja",
+        destination: "/el-milagro",
+        permanent: true,
+      },
+      {
+        source: "/la-contracaja/:slug",
+        destination: "/el-milagro/:slug",
+        permanent: true,
+      },
+      { source: "/hemeroteca", destination: "/prensa", permanent: true },
+      {
+        source: "/expediente-ddhh",
+        destination: "/compromisos",
+        permanent: true,
+      },
+      {
+        source: "/la-voz-de-las-victimas",
+        destination: "/mensaje-a-las-victimas",
+        permanent: true,
+      },
+      {
+        source: "/el-negocio-de-la-salud",
+        destination: "/equipo-salud",
+        permanent: true,
+      },
+      {
+        source: "/archivo",
+        destination: "/centro-de-documentacion",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

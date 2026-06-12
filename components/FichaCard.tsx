@@ -101,7 +101,7 @@ export default function FichaCard({
 
   return (
     <Link
-      href={`/la-contracaja/${slug}`}
+      href={`/el-milagro/${slug}`}
       className="group flex h-full flex-col rounded-xl border border-white/10 bg-navy-2/80 p-7 transition-all duration-200 hover:-translate-y-1 hover:border-yellow/40"
     >
       <span className="mb-5 inline-flex size-12 items-center justify-center self-start rounded-full bg-blue text-white">
@@ -112,7 +112,7 @@ export default function FichaCard({
         {pregunta}
       </p>
       <span className="mt-5 text-sm font-bold text-yellow transition-colors group-hover:text-white">
-        Abrir la ficha <span aria-hidden="true">→</span>
+        Conozca el milagro <span aria-hidden="true">→</span>
       </span>
     </Link>
   );

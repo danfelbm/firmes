@@ -39,8 +39,8 @@ export default function Footer() {
             </span>
           </p>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted">
-            Veeduría ciudadana sobre el candidato Abelardo de la Espriella.
-            Datos, fuentes y memoria, sin rugidos.
+            El portal del Tigre: todo lo que Abelardo de la Espriella ha dicho
+            y hecho, reunido con orgullo y con sus fuentes.
           </p>
           <div className="mt-6 flex gap-3">
             {socials.map((s) => (
@@ -84,7 +84,8 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-7xl px-6 py-6 text-center text-xs font-medium tracking-wide text-muted">
-          Hecho con memoria. Colombia 2026.
+          Firmes por la Patria · Colombia 2026 · La verdad completa, con
+          orgullo.
         </p>
       </div>
     </footer>

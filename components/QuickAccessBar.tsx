@@ -12,12 +12,12 @@ import {
 type QuickItem = { href: string; label: string; icon: LucideIcon };
 
 const items: QuickItem[] = [
-  { href: "/la-contracaja", label: "Contracaja", icon: Layers },
-  { href: "/hemeroteca", label: "Hemeroteca", icon: Newspaper },
-  { href: "/expediente-ddhh", label: "Expediente", icon: Scale },
-  { href: "/la-voz-de-las-victimas", label: "Víctimas", icon: Flower2 },
-  { href: "/el-negocio-de-la-salud", label: "Salud", icon: HeartPulse },
-  { href: "/archivo", label: "Archivo", icon: Archive },
+  { href: "/el-milagro", label: "El Milagro", icon: Layers },
+  { href: "/prensa", label: "Prensa", icon: Newspaper },
+  { href: "/compromisos", label: "Compromisos", icon: Scale },
+  { href: "/mensaje-a-las-victimas", label: "Víctimas", icon: Flower2 },
+  { href: "/equipo-salud", label: "Equipo de Salud", icon: HeartPulse },
+  { href: "/centro-de-documentacion", label: "Documentación", icon: Archive },
 ];
 
 export default function QuickAccessBar() {

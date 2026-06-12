@@ -16,32 +16,31 @@ type Expediente = {
 const expediente = expedienteJson as unknown as Expediente;
 
 export const metadata: Metadata = {
-  title: "El Expediente: DDHH y DIH",
+  title: "Los Compromisos del Tigre",
   description:
-    "Análisis en 7 frentes de las posiciones de Abelardo de la Espriella sobre derechos humanos y derecho internacional humanitario: JEP, Palestina y DIH, sistema internacional, uso de la fuerza, protesta, libertad de prensa y paz territorial.",
+    "La visión del Tigre sobre los derechos humanos, la justicia y el lugar de Colombia en el mundo, punto por punto — junto con las advertencias de quienes no la comparten, para que usted decida con toda la información.",
 };
 
-export default function ExpedienteDdhhPage() {
+export default function CompromisosPage() {
   return (
     <main>
       {/* Encabezado */}
       <section className="bg-navy section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <Badge>Análisis jurídico · 7 frentes</Badge>
+            <Badge>Nuestra visión del mundo</Badge>
             <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-white">
-              El <span className="text-red">Expediente</span>
+              Los <span className="text-red">Compromisos</span> del Tigre
             </h1>
             <span
               className="mt-6 block h-1 w-14 rounded-full bg-yellow"
               aria-hidden="true"
             />
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted">
-              Qué ha dicho y propuesto el candidato sobre derechos humanos y
-              derecho internacional humanitario — y qué queda en riesgo para
-              ti, para las víctimas y para el país si llega a la Presidencia.
-              Siete frentes, cada uno con sus dichos documentados y sus
-              consecuencias.
+              El Tigre tiene una visión clara sobre los derechos humanos, la
+              justicia y el lugar de Colombia en el mundo. La presentamos punto
+              por punto — junto con las advertencias de quienes no la
+              comparten, para que usted decida con toda la información.
             </p>
             <p className="mt-5 max-w-3xl text-sm font-medium text-white/60">
               {expediente.titulo}
@@ -50,7 +49,7 @@ export default function ExpedienteDdhhPage() {
 
           {/* Índice de secciones */}
           <Reveal delay={120}>
-            <nav aria-label="Índice del expediente">
+            <nav aria-label="Índice de los compromisos">
               <ul className="mt-12 flex flex-wrap gap-3">
                 {expediente.secciones.map((seccion, i) => (
                   <li key={seccion.id}>
@@ -81,18 +80,18 @@ export default function ExpedienteDdhhPage() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
             <h2 className="text-[clamp(1.8rem,4vw,2.75rem)] font-extrabold text-white">
-              El expediente no termina aquí
+              La palabra del Tigre no termina aquí
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-muted">
-              Escucha a quienes más tienen que perder y revisa, ficha por
-              ficha, lo que el candidato propone para cada sector.
+              Conozca el mensaje del candidato para las víctimas del conflicto
+              y recorra el Milagro, sector por sector.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <CtaButton href="/la-voz-de-las-victimas" variant="red">
-                La Voz de las Víctimas
+              <CtaButton href="/mensaje-a-las-victimas" variant="red">
+                Mensaje a las Víctimas
               </CtaButton>
-              <CtaButton href="/la-contracaja" variant="outline">
-                La Contracaja
+              <CtaButton href="/el-milagro" variant="outline">
+                El Milagro
               </CtaButton>
             </div>
           </Reveal>

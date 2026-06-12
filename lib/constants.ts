@@ -15,11 +15,14 @@ export const WHATSAPP_URL = "https://wa.me/";
 /** Rutas principales del sitio (navbar + footer). */
 export const NAV_LINKS = [
   { href: "/", label: "Inicio" },
-  { href: "/la-contracaja", label: "La Contracaja" },
-  { href: "/hemeroteca", label: "Hemeroteca" },
-  { href: "/expediente-ddhh", label: "Expediente DDHH" },
-  { href: "/la-voz-de-las-victimas", label: "Víctimas" },
-  { href: "/el-negocio-de-la-salud", label: "Salud" },
+  { href: "/el-milagro", label: "El Milagro" },
+  { href: "/prensa", label: "Prensa" },
+  { href: "/compromisos", label: "Compromisos" },
+  { href: "/mensaje-a-las-victimas", label: "Víctimas" },
+  { href: "/equipo-salud", label: "Equipo de Salud" },
 ] as const;
 
-export const ARCHIVO_LINK = { href: "/archivo", label: "El Archivo" } as const;
+export const ARCHIVO_LINK = {
+  href: "/centro-de-documentacion",
+  label: "Documentación",
+} as const;
