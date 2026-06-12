@@ -36,11 +36,11 @@ export default function PropuestasRiesgosTable({
           {filas.map((fila, i) => (
             <tr
               key={fila.propuesta}
-              className={`border-t border-white/10 align-top ${
-                i % 2 === 0 ? "bg-navy-2" : "bg-navy-2/40"
+              className={`border-t border-ink/10 align-top ${
+                i % 2 === 0 ? "bg-paper" : "bg-cream-2"
               }`}
             >
-              <td className="px-6 py-5 text-sm leading-relaxed text-white/90">
+              <td className="px-6 py-5 text-sm leading-relaxed text-ink/90">
                 {fila.propuesta}
               </td>
               <td className="px-6 py-5 text-sm leading-relaxed text-muted">
@@ -61,12 +61,12 @@ export default function PropuestasRiesgosTable({
         {filas.map((fila) => (
           <article
             key={fila.propuesta}
-            className="rounded-xl border border-white/10 bg-navy-2 p-6"
+            className="card-shadow rounded-xl border border-ink/10 bg-paper p-6"
           >
-            <p className="text-xs font-bold uppercase tracking-widest text-yellow">
+            <p className="inline-block bg-yellow px-1.5 py-0.5 text-xs font-bold uppercase tracking-widest text-ink">
               Propuesta
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-white/90">
+            <p className="mt-2 text-sm leading-relaxed text-ink/90">
               {fila.propuesta}
             </p>
             <p className="mt-5 text-xs font-bold uppercase tracking-widest text-blue">

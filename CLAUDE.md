@@ -1,6 +1,12 @@
 # Proyecto: Firmes por la Patria
 
-Portal de veeduría/contracampaña sobre Abelardo de la Espriella (ADLE), elecciones Colombia 2026. Replica el estilo visual de defensoresdelapatria.com (el sitio de la propia campaña de ADLE) con contenido crítico.
+Portal satírico sobre Abelardo de la Espriella (ADLE), elecciones Colombia 2026.
+
+## REGLA DE ORO DEL TONO (no romperla jamás)
+
+El portal habla en registro **cínico-oficialista**: suena a sitio oficial de campaña — épico, patriótico, orgulloso, agradecido. El narrador NUNCA critica: celebra, presume "transparencia total" y presenta el contenido documentado (citas, condenas, demandas) como logros. La crítica la hace el lector solo, por contraste. PROHIBIDO en la voz del portal: "veeduría", "denuncia", "contracampaña", "lo que realmente propone", cualquier acusación explícita. El análisis crítico ajeno se atribuye deadpan a "los enemigos de la patria" o "los abogados aguafiestas". Los DATOS (citas, fichas, noticias, data/*.json) son intocables: la sátira vive solo en la capa editorial.
+
+Rutas: `/el-milagro` (+31 slugs) · `/prensa` · `/compromisos` · `/mensaje-a-las-victimas` · `/equipo-salud` · `/centro-de-documentacion` (las rutas viejas redirigen en next.config.ts).
 
 ## Stack
 
@@ -24,9 +30,9 @@ Portal de veeduría/contracampaña sobre Abelardo de la Espriella (ADLE), elecci
 - Contenido 100% en español, `<html lang="es">`
 - Conventional Commits; **commit inmediato tras cada cambio**
 
-## Paleta (globals.css @theme)
+## Paleta (globals.css @theme) — LIGHT MODE
 
-navy `#0d0d2b` (fondo), navy-2 `#101035`, yellow `#FFD23F`, red `#E63329`, blue `#2D5BFF`, muted `#b8b8cf`. Tipografía: Poppins (400-800). Badges amarillos uppercase texto ink; CTA con flecha →; cards oscuras `border-white/10` con barrita amarilla (`.yellow-tick`).
+Fondo `cream #faf7f0` / superficies `paper #ffffff`, texto `ink #14143a`, secundario `muted #565672`, acentos yellow `#FFD23F` / red `#E63329` / blue `#2D5BFF`. El navy `#0d0d2b` se conserva SOLO como ancla oscura en Navbar, Footer y el banner de cita del home. Tipografía: Poppins (400-800). Cards `bg-paper border-ink/10 .card-shadow` con barrita amarilla (`.yellow-tick`); highlight amarillo estilo resaltador (`bg-yellow text-ink`); amarillo NUNCA como color de texto sobre fondo claro; links de acción `text-blue hover:text-red`.
 
 ## Seguridad
 
@@ -35,4 +41,4 @@ navy `#0d0d2b` (fondo), navy-2 `#101035`, yellow `#FFD23F`, red `#E63329`, blue 
 
 ## Contenido (insumos fuente en ~/Desktop)
 
-31 fichas Contracaja · 72 noticias CSV · expediente DDHH-DIH (PDF, 7 secciones) · víctimas (8 bloques + tabla) · dossier salud · ~133 enlaces XLSX (17 hojas) · audio "CALLE" 7:38 en Storage. Los JSON intermedios viven en `data/`.
+31 fichas Contracaja · 52 noticias CSV (72 líneas físicas = celdas multilínea) · expediente DDHH-DIH (PDF, 7 secciones) · víctimas (8 bloques + tabla) · dossier salud (6 ítems) · 121 enlaces XLSX (incluye 4 notas sin URL) · audio "CALLE" 7:38 en Storage. Los JSON intermedios viven en `data/`.

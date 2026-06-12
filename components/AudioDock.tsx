@@ -58,13 +58,13 @@ export default function AudioDock() {
         <button
           type="button"
           onClick={() => setMinimized(false)}
-          className="flex size-14 items-center justify-center rounded-full bg-yellow text-ink shadow-xl shadow-ink/50 transition-transform hover:-translate-y-0.5"
+          className="flex size-14 items-center justify-center rounded-full bg-yellow text-ink shadow-xl shadow-ink/25 transition-transform hover:-translate-y-0.5"
           aria-label="Abrir reproductor de CALLE"
         >
           <Music size={24} aria-hidden="true" />
         </button>
       ) : (
-        <div className="w-[19rem] rounded-2xl border border-white/10 bg-navy-2/95 p-4 shadow-2xl shadow-ink/60 backdrop-blur">
+        <div className="w-[19rem] rounded-2xl border border-ink/10 bg-paper/95 p-4 shadow-2xl shadow-ink/25 backdrop-blur">
           <div className="flex items-center gap-3">
             <button
               type="button"
@@ -78,7 +78,7 @@ export default function AudioDock() {
                 <Play size={20} className="ml-0.5" aria-hidden="true" />
               )}
             </button>
-            <p className="min-w-0 flex-1 truncate text-sm font-bold text-white">
+            <p className="min-w-0 flex-1 truncate text-sm font-bold text-ink">
               CALLE{" "}
               <span className="font-medium text-muted">
                 — la calle ya canta
@@ -87,7 +87,7 @@ export default function AudioDock() {
             <button
               type="button"
               onClick={() => setMinimized(true)}
-              className="shrink-0 text-muted transition-colors hover:text-white"
+              className="shrink-0 text-muted transition-colors hover:text-ink"
               aria-label="Minimizar reproductor"
             >
               <X size={18} aria-hidden="true" />
@@ -95,7 +95,7 @@ export default function AudioDock() {
           </div>
 
           <div
-            className="mt-3 h-2 cursor-pointer overflow-hidden rounded-full bg-white/10"
+            className="mt-3 h-2 cursor-pointer overflow-hidden rounded-full bg-ink/10"
             onClick={seek}
             role="slider"
             aria-label="Progreso de la canción"

@@ -17,7 +17,12 @@ export default function SectionHeading({
   align = "left",
 }: SectionHeadingProps) {
   const isCenter = align === "center";
-  const colorClass = highlightColor === "blue" ? "text-blue" : "text-yellow";
+  // Sobre fondo claro el amarillo no funciona como color de texto: el
+  // highlight amarillo se vuelve "resaltador" (texto ink sobre fondo amarillo).
+  const colorClass =
+    highlightColor === "blue"
+      ? "text-blue"
+      : "bg-yellow box-decoration-clone px-2 text-ink";
 
   let content: React.ReactNode = title;
   if (highlight && title.includes(highlight)) {
@@ -38,7 +43,7 @@ export default function SectionHeading({
           <Badge>{kicker}</Badge>
         </div>
       ) : null}
-      <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-white">
+      <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-ink">
         {content}
       </h2>
       <span

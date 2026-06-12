@@ -16,7 +16,7 @@ export default function ArchivoFilters({ temas, activo }: ArchivoFiltersProps) {
 
   const base =
     "rounded-full border px-4 py-2 text-sm font-semibold transition-colors";
-  const inactiveClass = `${base} border-white/15 bg-navy-2/80 text-white/85 hover:border-yellow/50 hover:text-yellow`;
+  const inactiveClass = `${base} border-ink/15 bg-paper text-ink hover:border-yellow`;
   const activeClass = `${base} border-yellow bg-yellow text-ink`;
 
   return (

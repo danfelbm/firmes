@@ -21,7 +21,7 @@ export default function ExpedienteSection({
   index,
 }: ExpedienteSectionProps) {
   const numero = String(index + 1).padStart(2, "0");
-  const bg = index % 2 === 0 ? "bg-navy" : "bg-navy-2";
+  const bg = index % 2 === 0 ? "bg-cream" : "bg-paper";
 
   return (
     <section
@@ -33,14 +33,14 @@ export default function ExpedienteSection({
         <Reveal>
           <div className="flex items-baseline gap-5">
             <span
-              className="text-[clamp(3rem,7vw,5rem)] font-extrabold leading-none text-white/10"
+              className="text-[clamp(3rem,7vw,5rem)] font-extrabold leading-none text-ink/10"
               aria-hidden="true"
             >
               {numero}
             </span>
             <h2
               id={`${seccion.id}-titulo`}
-              className="text-[clamp(1.6rem,3.5vw,2.5rem)] font-extrabold text-white"
+              className="text-[clamp(1.6rem,3.5vw,2.5rem)] font-extrabold text-ink"
             >
               {seccion.titulo}
             </h2>
@@ -66,7 +66,7 @@ export default function ExpedienteSection({
                       className="mt-2 size-2.5 shrink-0 rounded-[2px] bg-red"
                       aria-hidden="true"
                     />
-                    <span className="text-sm leading-relaxed text-white/85">
+                    <span className="text-sm leading-relaxed text-ink/85">
                       {dicho}
                     </span>
                   </li>
@@ -99,14 +99,14 @@ export default function ExpedienteSection({
 
         {seccion.cita ? (
           <Reveal delay={140}>
-            <blockquote className="relative mt-12 border-l-4 border-yellow bg-navy-3/60 px-8 py-8 md:px-12">
+            <blockquote className="relative mt-12 border-l-4 border-yellow bg-yellow/10 px-8 py-8 md:px-12">
               <span
                 className="pointer-events-none absolute -top-4 left-4 text-[5rem] font-extrabold leading-none text-yellow/80"
                 aria-hidden="true"
               >
                 &ldquo;
               </span>
-              <p className="relative text-[clamp(1.1rem,2.2vw,1.5rem)] font-bold leading-snug text-white">
+              <p className="relative text-[clamp(1.1rem,2.2vw,1.5rem)] font-bold leading-snug text-ink">
                 {seccion.cita}
               </p>
             </blockquote>

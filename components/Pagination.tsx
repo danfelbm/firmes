@@ -42,12 +42,12 @@ export default function Pagination({
         <Link
           href={hrefFor(page - 1)}
           aria-label="Página anterior"
-          className={`${baseItem} border border-white/10 text-muted hover:border-white/30 hover:text-white`}
+          className={`${baseItem} border border-ink/15 text-muted hover:border-ink/40 hover:text-ink`}
         >
           «
         </Link>
       ) : (
-        <span aria-hidden="true" className={`${baseItem} text-white/25`}>
+        <span aria-hidden="true" className={`${baseItem} text-ink/25`}>
           «
         </span>
       )}
@@ -65,7 +65,7 @@ export default function Pagination({
           <Link
             key={p}
             href={hrefFor(p)}
-            className={`${baseItem} border border-white/10 text-muted hover:border-white/30 hover:text-white`}
+            className={`${baseItem} border border-ink/15 text-muted hover:border-ink/40 hover:text-ink`}
           >
             {p}
           </Link>
@@ -76,12 +76,12 @@ export default function Pagination({
         <Link
           href={hrefFor(page + 1)}
           aria-label="Página siguiente"
-          className={`${baseItem} border border-white/10 text-muted hover:border-white/30 hover:text-white`}
+          className={`${baseItem} border border-ink/15 text-muted hover:border-ink/40 hover:text-ink`}
         >
           »
         </Link>
       ) : (
-        <span aria-hidden="true" className={`${baseItem} text-white/25`}>
+        <span aria-hidden="true" className={`${baseItem} text-ink/25`}>
           »
         </span>
       )}

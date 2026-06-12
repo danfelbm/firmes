@@ -15,13 +15,13 @@ export default async function ElMilagroPage() {
   const fichas = await getFichas();
 
   return (
-    <main className="bg-navy">
+    <main className="bg-cream">
       <section className="section-padding mx-auto max-w-7xl px-6">
         <Reveal>
           <div className="max-w-3xl">
             <Badge>Colombia Patria Milagro</Badge>
-            <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.25rem)] font-extrabold leading-tight text-white">
-              El <span className="text-yellow">Milagro</span>, sector por
+            <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.25rem)] font-extrabold leading-tight text-ink">
+              El <span className="bg-yellow px-2">Milagro</span>, sector por
               sector
             </h1>
             <span
@@ -30,7 +30,10 @@ export default async function ElMilagroPage() {
             />
             <p className="mt-6 text-lg leading-relaxed text-muted">
               La palabra del Tigre explicada con el cariño que merece:{" "}
-              <strong className="font-bold text-yellow">lo que dijo</strong>,
+              <strong className="bg-yellow px-1 font-bold text-ink">
+                lo que dijo
+              </strong>
+              ,
               con sus propias palabras; lo que significa{" "}
               <strong className="font-bold text-blue">en cristiano</strong>; y{" "}
               <strong className="font-bold text-red">

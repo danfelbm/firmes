@@ -39,7 +39,7 @@ export default async function Home() {
       <QuickAccessBar />
 
       {/* El Milagro */}
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -76,7 +76,7 @@ export default async function Home() {
       </section>
 
       {/* Prensa */}
-      <section className="bg-navy-2 section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -125,8 +125,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Banner Compromisos */}
-      <section className="bg-navy section-padding">
+      {/* Banner Compromisos: bloque oscuro de acento sobre fondo claro */}
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <div className="rounded-2xl border-2 border-red bg-navy-3 px-8 py-14 text-center md:px-16">
@@ -142,7 +142,8 @@ export default async function Home() {
                   &rdquo;
                 </span>
               </blockquote>
-              <p className="mt-5 text-sm font-medium text-muted">
+              {/* white/70 en lugar de text-muted: la caja sigue siendo navy-3 */}
+              <p className="mt-5 text-sm font-medium text-white/70">
                 — Abelardo de la Espriella, agosto de 2025 (Publimetro).
                 Palabra entregada con la solemnidad que el momento exige · 7
                 compromisos documentados.
@@ -158,7 +159,7 @@ export default async function Home() {
       </section>
 
       {/* Equipo de salud */}
-      <section className="bg-navy-2 section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -175,18 +176,18 @@ export default async function Home() {
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {casosSalud.map((caso, i) => (
               <Reveal key={caso.url} delay={i * 80}>
-                <article className="flex h-full flex-col rounded-xl border border-white/10 bg-navy/80 p-7 transition-transform duration-200 hover:-translate-y-1">
+                <article className="card-shadow flex h-full flex-col rounded-xl border border-ink/10 bg-paper p-7 transition-transform duration-200 hover:-translate-y-1">
                   <span className="self-start rounded-full bg-blue/20 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-blue">
                     {caso.medio}
                   </span>
-                  <h3 className="yellow-tick mt-5 flex-1 text-lg font-bold leading-snug text-white">
+                  <h3 className="yellow-tick mt-5 flex-1 text-lg font-bold leading-snug text-ink">
                     {caso.titulo}
                   </h3>
                   <a
                     href={caso.url}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="mt-5 text-sm font-bold text-yellow transition-colors hover:text-white"
+                    className="mt-5 text-sm font-bold text-blue transition-colors hover:text-red"
                   >
                     Ver el reconocimiento de la prensa{" "}
                     <span aria-hidden="true">→</span>
@@ -206,7 +207,7 @@ export default async function Home() {
       </section>
 
       {/* Centro de Documentación */}
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -224,10 +225,10 @@ export default async function Home() {
               {temasEnlaces.map(({ tema, count }) => (
                 <span
                   key={tema}
-                  className="rounded-full border border-white/15 bg-navy-2/80 px-4 py-2 text-sm font-semibold text-white/85"
+                  className="card-shadow rounded-full border border-ink/15 bg-paper px-4 py-2 text-sm font-semibold text-ink"
                 >
                   {tema}{" "}
-                  <span className="font-bold text-yellow">({count})</span>
+                  <span className="font-bold text-blue">({count})</span>
                 </span>
               ))}
             </div>
@@ -247,7 +248,7 @@ export default async function Home() {
       </section>
 
       {/* Ruge la Calle */}
-      <section className="bg-navy-2 section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
             <SectionHeading
@@ -257,11 +258,11 @@ export default async function Home() {
               align="center"
             />
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted">
-              <strong className="text-white">CALLE</strong> es el sonido de
+              <strong className="text-ink">CALLE</strong> es el sonido de
               este momento histórico. Pulse play en el reproductor y escuche lo
               que se canta ahí afuera.
             </p>
-            <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-yellow">
+            <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-red">
               El reproductor vive abajo a la izquierda — pulse play y siga
               leyendo.
             </p>

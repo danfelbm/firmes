@@ -102,16 +102,16 @@ export default function FichaCard({
   return (
     <Link
       href={`/el-milagro/${slug}`}
-      className="group flex h-full flex-col rounded-xl border border-white/10 bg-navy-2/80 p-7 transition-all duration-200 hover:-translate-y-1 hover:border-yellow/40"
+      className="card-shadow group flex h-full flex-col rounded-xl border border-ink/10 bg-paper p-7 transition-all duration-200 hover:-translate-y-1 hover:border-yellow/60"
     >
       <span className="mb-5 inline-flex size-12 items-center justify-center self-start rounded-full bg-blue text-white">
         <Icon size={22} strokeWidth={2.25} aria-hidden="true" />
       </span>
-      <h3 className="yellow-tick text-lg font-bold text-white">{sector}</h3>
+      <h3 className="yellow-tick text-lg font-bold text-ink">{sector}</h3>
       <p className="mt-4 flex-1 text-sm leading-relaxed text-muted">
         {pregunta}
       </p>
-      <span className="mt-5 text-sm font-bold text-yellow transition-colors group-hover:text-white">
+      <span className="mt-5 text-sm font-bold text-blue transition-colors group-hover:text-red">
         Conozca el milagro <span aria-hidden="true">→</span>
       </span>
     </Link>

@@ -25,11 +25,11 @@ export default function CompromisosPage() {
   return (
     <main>
       {/* Encabezado */}
-      <section className="bg-navy section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <Badge>Nuestra visión del mundo</Badge>
-            <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-white">
+            <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-ink">
               Los <span className="text-red">Compromisos</span> del Tigre
             </h1>
             <span
@@ -42,7 +42,7 @@ export default function CompromisosPage() {
               por punto — junto con las advertencias de quienes no la
               comparten, para que usted decida con toda la información.
             </p>
-            <p className="mt-5 max-w-3xl text-sm font-medium text-white/60">
+            <p className="mt-5 max-w-3xl text-sm font-medium text-muted">
               {expediente.titulo}
             </p>
           </Reveal>
@@ -55,9 +55,9 @@ export default function CompromisosPage() {
                   <li key={seccion.id}>
                     <a
                       href={`#${seccion.id}`}
-                      className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-navy-2/80 px-4 py-2 text-sm font-semibold text-white/85 transition-colors hover:border-yellow hover:text-yellow"
+                      className="card-shadow inline-flex items-center gap-2 rounded-full border border-ink/15 bg-paper px-4 py-2 text-sm font-semibold text-ink transition-colors hover:border-yellow hover:text-blue"
                     >
-                      <span className="text-xs font-bold text-yellow">
+                      <span className="text-xs font-bold text-red">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       {seccion.titulo}
@@ -76,10 +76,10 @@ export default function CompromisosPage() {
       ))}
 
       {/* Cierre */}
-      <section className="bg-navy section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
-            <h2 className="text-[clamp(1.8rem,4vw,2.75rem)] font-extrabold text-white">
+            <h2 className="text-[clamp(1.8rem,4vw,2.75rem)] font-extrabold text-ink">
               La palabra del Tigre no termina aquí
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-muted">

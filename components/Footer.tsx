@@ -38,7 +38,9 @@ export default function Footer() {
               Por la Patria
             </span>
           </p>
-          <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted">
+          {/* white/70 en lugar de text-muted: el token muted ahora es oscuro
+              (para fondos claros) y este bloque sigue siendo navy. */}
+          <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/70">
             El portal del Tigre: todo lo que Abelardo de la Espriella ha dicho
             y hecho, reunido con orgullo y con sus fuentes.
           </p>
@@ -47,7 +49,7 @@ export default function Footer() {
               <a
                 key={s.label}
                 href={s.href}
-                className="flex size-10 items-center justify-center rounded-full border border-white/15 text-muted transition-colors hover:border-yellow hover:text-yellow"
+                className="flex size-10 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-yellow hover:text-yellow"
                 aria-label={s.label}
               >
                 <svg
@@ -83,7 +85,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-6 py-6 text-center text-xs font-medium tracking-wide text-muted">
+        <p className="mx-auto max-w-7xl px-6 py-6 text-center text-xs font-medium tracking-wide text-white/70">
           Firmes por la Patria · Colombia 2026 · La verdad completa, con
           orgullo.
         </p>

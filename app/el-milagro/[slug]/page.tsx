@@ -84,13 +84,13 @@ export default async function FichaPage({ params }: PageProps) {
   const siguiente = idx >= 0 && idx < fichas.length - 1 ? fichas[idx + 1] : null;
 
   return (
-    <main className="bg-navy">
+    <main className="bg-cream">
       <article className="section-padding mx-auto max-w-4xl px-6">
         <Reveal>
           <nav aria-label="Miga de pan">
             <Link
               href="/el-milagro"
-              className="text-sm font-bold text-yellow transition-colors hover:text-white"
+              className="text-sm font-bold text-blue transition-colors hover:text-red"
             >
               <span aria-hidden="true">←</span> El Milagro
             </Link>
@@ -98,7 +98,7 @@ export default async function FichaPage({ params }: PageProps) {
 
           <header className="mt-8">
             <Badge>{`Milagro N°${ficha.orden} de 31`}</Badge>
-            <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.5rem)] font-extrabold leading-tight text-white">
+            <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.5rem)] font-extrabold leading-tight text-ink">
               {tituloMilagro(ficha.slug, ficha.sector)}
             </h1>
             <span
@@ -123,12 +123,12 @@ export default async function FichaPage({ params }: PageProps) {
             {anterior ? (
               <Link
                 href={`/el-milagro/${anterior.slug}`}
-                className="group rounded-xl border border-white/10 bg-navy-2/80 p-5 transition-all duration-200 hover:-translate-y-1 hover:border-yellow/40"
+                className="card-shadow group rounded-xl border border-ink/10 bg-paper p-5 transition-all duration-200 hover:-translate-y-1 hover:border-yellow/60"
               >
                 <span className="text-xs font-bold uppercase tracking-wide text-muted">
                   <span aria-hidden="true">←</span> Milagro anterior
                 </span>
-                <span className="mt-2 block font-bold text-white transition-colors group-hover:text-yellow">
+                <span className="mt-2 block font-bold text-ink transition-colors group-hover:text-blue">
                   {anterior.sector}
                 </span>
               </Link>
@@ -138,12 +138,12 @@ export default async function FichaPage({ params }: PageProps) {
             {siguiente ? (
               <Link
                 href={`/el-milagro/${siguiente.slug}`}
-                className="group rounded-xl border border-white/10 bg-navy-2/80 p-5 text-right transition-all duration-200 hover:-translate-y-1 hover:border-yellow/40 sm:col-start-2"
+                className="card-shadow group rounded-xl border border-ink/10 bg-paper p-5 text-right transition-all duration-200 hover:-translate-y-1 hover:border-yellow/60 sm:col-start-2"
               >
                 <span className="text-xs font-bold uppercase tracking-wide text-muted">
                   Milagro siguiente <span aria-hidden="true">→</span>
                 </span>
-                <span className="mt-2 block font-bold text-white transition-colors group-hover:text-yellow">
+                <span className="mt-2 block font-bold text-ink transition-colors group-hover:text-blue">
                   {siguiente.sector}
                 </span>
               </Link>

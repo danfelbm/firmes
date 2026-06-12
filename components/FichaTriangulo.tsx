@@ -40,11 +40,13 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
 
   const bloques: Bloque[] = [
     {
+      // El amarillo no funciona como color de texto sobre claro: la etiqueta
+      // va en ink y el acento amarillo vive en el icono y el borde superior.
       etiqueta: "Palabra del Tigre",
       texto: ficha.lo_que_dice,
       icon: Quote,
-      labelClass: "text-yellow",
-      iconClass: "bg-yellow/15 text-yellow",
+      labelClass: "text-ink",
+      iconClass: "bg-yellow text-ink",
       borderClass: "border-t-yellow",
       esCita: true,
     },
@@ -76,12 +78,12 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
           <div key={bloque.etiqueta} className="flex flex-col">
             {i > 0 ? (
               <span
-                className="mx-auto h-8 w-px bg-white/20"
+                className="mx-auto h-8 w-px bg-ink/15"
                 aria-hidden="true"
               />
             ) : null}
             <section
-              className={`rounded-xl border border-white/10 border-t-2 bg-navy-2/80 p-7 sm:p-8 ${bloque.borderClass}`}
+              className={`card-shadow rounded-xl border border-ink/10 border-t-2 bg-paper p-7 sm:p-8 ${bloque.borderClass}`}
             >
               <div className="flex items-center gap-3">
                 <span
@@ -96,14 +98,14 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
                     {bloque.etiqueta}
                   </h2>
                   {bloque.subtitulo ? (
-                    <p className="mt-0.5 text-sm font-semibold text-white">
+                    <p className="mt-0.5 text-sm font-semibold text-ink">
                       {bloque.subtitulo}
                     </p>
                   ) : null}
                 </div>
               </div>
               {bloque.esCita ? (
-                <blockquote className="mt-5 border-l-2 border-yellow/50 pl-5 text-base leading-relaxed text-white/90 italic whitespace-pre-line">
+                <blockquote className="mt-5 border-l-2 border-yellow pl-5 text-base leading-relaxed text-ink/90 italic whitespace-pre-line">
                   {bloque.texto}
                 </blockquote>
               ) : (
@@ -118,10 +120,10 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
 
       {fuentes.length > 0 ? (
         <>
-          <span className="mx-auto h-8 w-px bg-white/20" aria-hidden="true" />
-          <section className="rounded-xl border border-white/10 bg-navy-2/80 p-7 sm:p-8">
+          <span className="mx-auto h-8 w-px bg-ink/15" aria-hidden="true" />
+          <section className="card-shadow rounded-xl border border-ink/10 bg-paper p-7 sm:p-8">
             <div className="flex items-center gap-3">
-              <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-muted">
+              <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-ink/10 text-muted">
                 <LinkIcon size={20} strokeWidth={2.25} aria-hidden="true" />
               </span>
               <h2 className="text-xs font-bold uppercase tracking-widest text-muted">
@@ -140,11 +142,11 @@ export default function FichaTriangulo({ ficha }: { ficha: Ficha }) {
                       className="group inline-flex flex-col gap-0.5"
                     >
                       {dominio ? (
-                        <span className="font-bold text-yellow transition-colors group-hover:text-white">
+                        <span className="font-bold text-blue transition-colors group-hover:text-red">
                           {dominio} <span aria-hidden="true">↗</span>
                         </span>
                       ) : null}
-                      <span className="break-all text-muted underline decoration-white/20 underline-offset-2 transition-colors group-hover:text-white">
+                      <span className="break-all text-muted underline decoration-ink/20 underline-offset-2 transition-colors group-hover:text-ink">
                         {url}
                       </span>
                     </a>

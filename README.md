@@ -1,6 +1,6 @@
 # Firmes por la Patria
 
-Portal de veeduría ciudadana sobre el candidato Abelardo de la Espriella (elecciones Colombia 2026). Publica íntegros los insumos de investigación: la Contracaja de 31 fichas sectoriales, 52 noticias de prensa (2008–2026), el expediente de DDHH y DIH, la voz de las víctimas, el dossier del negocio de la salud y un archivo de 127 fuentes documentadas.
+Portal satírico en registro cínico-oficialista sobre el candidato Abelardo de la Espriella (elecciones Colombia 2026): suena a sitio oficial de campaña, pero publica íntegro el material documentado — el Milagro sector por sector (31 fichas), 18 años de prensa (52 artículos), los compromisos en DDHH y DIH, el mensaje a las víctimas, el equipo de salud y un centro de documentación con 127 fuentes. Light mode institucional-patriótico.
 
 ## Stack
 
@@ -47,4 +47,4 @@ node scripts/verify-content.mjs        # 8 checks de completitud + RLS
 
 ## Rutas
 
-`/` · `/la-contracaja` (+31 fichas SSG) · `/hemeroteca` (filtros y búsqueda) · `/expediente-ddhh` · `/la-voz-de-las-victimas` · `/el-negocio-de-la-salud` · `/archivo` (filtro por tema)
+`/` · `/el-milagro` (+31 fichas SSG) · `/prensa` (filtros y búsqueda) · `/compromisos` · `/mensaje-a-las-victimas` · `/equipo-salud` · `/centro-de-documentacion` (filtro por tema). Las rutas anteriores (`/la-contracaja`, `/hemeroteca`, etc.) redirigen permanentemente.

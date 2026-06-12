@@ -27,12 +27,12 @@ export default function MensajeALasVictimasPage() {
   return (
     <main>
       {/* Encabezado */}
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <Badge>El Tigre habla claro</Badge>
-            <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-white">
-              Mensaje a las <span className="text-yellow">Víctimas</span>
+            <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-ink">
+              Mensaje a las <span className="bg-yellow px-2">Víctimas</span>
             </h1>
             <span
               className="mt-6 block h-1 w-14 rounded-full bg-yellow"
@@ -48,7 +48,7 @@ export default function MensajeALasVictimasPage() {
       </section>
 
       {/* Los 8 bloques */}
-      <section className="bg-navy-2 section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-5xl space-y-8 px-6">
           {victimas.bloques.map((bloque, i) => (
             <Reveal key={bloque.fuenteUrl} delay={(i % 2) * 80}>
@@ -59,12 +59,12 @@ export default function MensajeALasVictimasPage() {
       </section>
 
       {/* El programa y sus pequeños detalles */}
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-white">
+            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-ink">
               El programa y sus pequeños{" "}
-              <span className="text-yellow">detalles</span>
+              <span className="bg-yellow px-2">detalles</span>
             </h2>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"

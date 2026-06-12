@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* Paleta "Firmes por la Patria" (estilo defensoresdelapatria) */
+  /* Paleta "Firmes por la Patria" — light mode institucional-patriótico */
+  --color-paper: #ffffff;
+  --color-cream: #faf7f0;
+  --color-cream-2: #f3eee2;
+  --color-ink: #14143a;
   --color-navy: #0d0d2b;
   --color-navy-2: #101035;
   --color-navy-3: #161650;
   --color-yellow: #ffd23f;
   --color-red: #e63329;
   --color-blue: #2d5bff;
-  --color-cream: #f5f3ec;
-  --color-ink: #0a0a20;
-  --color-muted: #b8b8cf;
+  --color-muted: #565672;
 
   --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
@@ -21,8 +23,8 @@
   }
 
   body {
-    background-color: var(--color-navy);
-    color: #ffffff;
+    background-color: var(--color-cream);
+    color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
@@ -64,8 +66,9 @@
     border-radius: 2px;
   }
 
-  .text-glow-yellow {
-    text-shadow: 0 0 40px rgb(255 210 63 / 0.35);
+  /* Sombra suave para cards claras sobre fondos cream/paper */
+  .card-shadow {
+    box-shadow: 0 2px 12px rgb(20 20 58 / 0.06);
   }
 
   .animate-fade-up {

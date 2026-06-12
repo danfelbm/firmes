@@ -24,12 +24,13 @@ export default function EquipoSaludPage() {
   return (
     <main>
       {/* Encabezado */}
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <Badge>El equipo del Milagro</Badge>
-            <h1 className="mt-8 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-white">
-              Nuestros <span className="text-yellow">Aliados</span> en la Salud
+            <h1 className="mt-8 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-ink">
+              Nuestros <span className="bg-yellow px-2">Aliados</span> en la
+              Salud
             </h1>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
@@ -47,16 +48,16 @@ export default function EquipoSaludPage() {
       </section>
 
       {/* Grid de casos */}
-      <section className="bg-navy-2 section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-6 md:grid-cols-2">
             {items.map((item, i) => (
               <Reveal key={item.url} delay={(i % 2) * 80}>
-                <article className="flex h-full flex-col rounded-xl border border-white/10 bg-navy/80 p-7 transition-transform duration-200 hover:-translate-y-1">
+                <article className="card-shadow flex h-full flex-col rounded-xl border border-ink/10 bg-paper p-7 transition-transform duration-200 hover:-translate-y-1">
                   <span className="self-start rounded-full bg-blue/20 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-blue">
                     {item.medio}
                   </span>
-                  <h2 className="yellow-tick mt-5 text-lg font-bold leading-snug text-white">
+                  <h2 className="yellow-tick mt-5 text-lg font-bold leading-snug text-ink">
                     {item.titulo}
                   </h2>
                   {item.comentario ? (
@@ -68,7 +69,7 @@ export default function EquipoSaludPage() {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="mt-auto pt-5 text-sm font-bold text-yellow transition-colors hover:text-white"
+                    className="mt-auto pt-5 text-sm font-bold text-blue transition-colors hover:text-red"
                   >
                     Ver el reconocimiento de la prensa{" "}
                     <span aria-hidden="true">→</span>
@@ -81,7 +82,7 @@ export default function EquipoSaludPage() {
       </section>
 
       {/* Cierre */}
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
             <p className="text-lg leading-relaxed text-muted">

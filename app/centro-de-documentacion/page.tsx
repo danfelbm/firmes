@@ -42,13 +42,13 @@ export default async function CentroDeDocumentacionPage({
   return (
     <main>
       {/* Encabezado */}
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <Badge>{`${total} fuentes · Transparencia total`}</Badge>
-            <h1 className="mt-8 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-white">
-              Centro de <span className="text-yellow">Documentación</span> de
-              la Patria
+            <h1 className="mt-8 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-ink">
+              Centro de <span className="bg-yellow px-2">Documentación</span>{" "}
+              de la Patria
             </h1>
             <span
               className="mt-5 block h-1 w-14 rounded-full bg-yellow"
@@ -68,7 +68,7 @@ export default async function CentroDeDocumentacionPage({
       </section>
 
       {/* Listado */}
-      <section className="bg-navy-2 section-padding">
+      <section className="bg-paper section-padding">
         <div className="mx-auto max-w-5xl px-6">
           {temaActivo ? (
             <div className="flex flex-col gap-4">
@@ -80,7 +80,7 @@ export default async function CentroDeDocumentacionPage({
             <div className="flex flex-col gap-16">
               {grupos.map(({ tema, enlaces: enlacesTema }) => (
                 <div key={tema}>
-                  <h2 className="yellow-tick text-2xl font-extrabold text-white">
+                  <h2 className="yellow-tick text-2xl font-extrabold text-ink">
                     {tema}{" "}
                     <span className="text-base font-semibold text-muted">
                       ({enlacesTema.length})

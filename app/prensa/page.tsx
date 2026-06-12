@@ -60,11 +60,11 @@ export default async function PrensaPage({
 
   return (
     <main>
-      <section className="bg-navy section-padding">
+      <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <Badge>Sala de prensa · 2008–2026</Badge>
-            <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-white">
+            <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-ink">
               El Tigre en los <span className="text-blue">Medios</span>
             </h1>
             <span
@@ -124,8 +124,8 @@ export default async function PrensaPage({
               />
             </>
           ) : (
-            <div className="mt-10 rounded-xl border border-white/10 bg-navy-2/60 px-8 py-20 text-center">
-              <p className="text-2xl font-extrabold text-white">
+            <div className="card-shadow mt-10 rounded-xl border border-ink/10 bg-paper px-8 py-20 text-center">
+              <p className="text-2xl font-extrabold text-ink">
                 Ni los enemigos de la patria encontraron algo con esos filtros.
               </p>
               <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-muted">

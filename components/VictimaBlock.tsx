@@ -16,15 +16,15 @@ export default function VictimaBlock({ bloque, numero }: VictimaBlockProps) {
   const num = String(numero).padStart(2, "0");
 
   return (
-    <article className="rounded-2xl border border-white/10 bg-navy-2/80 p-8 md:p-10">
+    <article className="card-shadow rounded-2xl border border-ink/10 bg-paper p-8 md:p-10">
       <div className="flex items-start gap-5">
         <span
-          className="text-[clamp(2.5rem,5vw,3.5rem)] font-extrabold leading-none text-white/10"
+          className="text-[clamp(2.5rem,5vw,3.5rem)] font-extrabold leading-none text-ink/10"
           aria-hidden="true"
         >
           {num}
         </span>
-        <h2 className="text-xl font-bold leading-snug text-white md:text-2xl">
+        <h2 className="text-xl font-bold leading-snug text-ink md:text-2xl">
           {bloque.titulo}
         </h2>
       </div>
@@ -37,7 +37,7 @@ export default function VictimaBlock({ bloque, numero }: VictimaBlockProps) {
           >
             &ldquo;
           </span>
-          <p className="relative whitespace-pre-line text-base font-semibold leading-relaxed text-white/90 md:text-lg">
+          <p className="relative whitespace-pre-line text-base font-semibold leading-relaxed text-ink/90 md:text-lg">
             {bloque.cita}
           </p>
         </blockquote>
@@ -58,7 +58,7 @@ export default function VictimaBlock({ bloque, numero }: VictimaBlockProps) {
         href={bloque.fuenteUrl}
         target="_blank"
         rel="noopener noreferrer nofollow"
-        className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-yellow transition-colors hover:text-white"
+        className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-blue transition-colors hover:text-red"
       >
         Ver la fuente original
         <ExternalLink size={15} strokeWidth={2.5} aria-hidden="true" />

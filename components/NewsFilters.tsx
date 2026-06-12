@@ -11,7 +11,7 @@ type NewsFiltersProps = {
 };
 
 const selectClass =
-  "rounded-lg border border-white/10 bg-navy-2 px-3 py-2.5 text-sm font-medium text-white outline-none transition-colors hover:border-white/25 focus:border-yellow/60";
+  "rounded-lg border border-ink/15 bg-paper px-3 py-2.5 text-sm font-medium text-ink outline-none transition-colors hover:border-ink/30 focus:border-yellow";
 
 export default function NewsFilters({ medios, temas, anios }: NewsFiltersProps) {
   const router = useRouter();
@@ -44,7 +44,7 @@ export default function NewsFilters({ medios, temas, anios }: NewsFiltersProps) 
   }
 
   return (
-    <div className="rounded-xl border border-white/10 bg-navy-2/60 p-4 md:p-5">
+    <div className="card-shadow rounded-xl border border-ink/10 bg-paper p-4 md:p-5">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
         <form
           role="search"
@@ -65,7 +65,7 @@ export default function NewsFilters({ medios, temas, anios }: NewsFiltersProps) 
               onChange={(e) => setQ(e.target.value)}
               placeholder="Buscar en titulares y resúmenes…"
               aria-label="Buscar noticias"
-              className="w-full rounded-lg border border-white/10 bg-navy-2 py-2.5 pl-10 pr-3 text-sm text-white placeholder:text-muted/70 outline-none transition-colors hover:border-white/25 focus:border-yellow/60"
+              className="w-full rounded-lg border border-ink/15 bg-paper py-2.5 pl-10 pr-3 text-sm text-ink placeholder:text-muted/70 outline-none transition-colors hover:border-ink/30 focus:border-yellow"
             />
           </div>
           <button
@@ -123,7 +123,7 @@ export default function NewsFilters({ medios, temas, anios }: NewsFiltersProps) 
             <button
               type="button"
               onClick={limpiar}
-              className="rounded-lg border border-white/20 px-4 py-2.5 text-sm font-bold text-white transition-colors hover:border-white/50 hover:bg-white/10"
+              className="rounded-lg border border-ink/20 px-4 py-2.5 text-sm font-bold text-ink transition-colors hover:border-ink/50 hover:bg-ink/5"
             >
               Limpiar
             </button>

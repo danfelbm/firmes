@@ -9,8 +9,7 @@ type CtaButtonProps = {
 const variants: Record<NonNullable<CtaButtonProps["variant"]>, string> = {
   yellow: "bg-yellow text-ink hover:brightness-105",
   red: "bg-red text-white hover:brightness-110",
-  outline:
-    "border-2 border-white/70 text-white hover:border-white hover:bg-white/10",
+  outline: "border-2 border-ink text-ink hover:bg-ink/5",
 };
 
 export default function CtaButton({
