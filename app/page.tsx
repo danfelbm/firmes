@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import CtaButton from "@/components/CtaButton";
 import FichaCard from "@/components/FichaCard";
 import Hero from "@/components/Hero";
@@ -42,16 +44,30 @@ export default async function Home() {
       <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <SectionHeading
-              kicker="31 sectores, 31 milagros"
-              title="El Milagro, sector por sector"
-              highlight="Milagro"
-            />
-            <p className="mt-6 max-w-2xl text-muted">
-              La palabra del Tigre explicada con el cariño que merece: lo que
-              dijo, lo que significa en cristiano y lo que le toca a usted.
-              Transparencia total.
-            </p>
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              <div>
+                <SectionHeading
+                  kicker="31 sectores, 31 milagros"
+                  title="El Milagro, sector por sector"
+                  highlight="Milagro"
+                />
+                <p className="mt-6 max-w-2xl text-muted">
+                  La palabra del Tigre explicada con el cariño que merece: lo
+                  que dijo, lo que significa en cristiano y lo que le toca a
+                  usted. Transparencia total.
+                </p>
+              </div>
+              <figure className="card-shadow overflow-hidden rounded-2xl border border-ink/10 bg-paper">
+                <Image
+                  src="/abelardo/milagro.webp"
+                  alt="Abelardo de la Espriella presentando sus propuestas"
+                  width={1200}
+                  height={675}
+                  sizes="(max-width: 1024px) 90vw, 45vw"
+                  className="h-full w-full object-cover"
+                />
+              </figure>
+            </div>
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {fichas.map((ficha, i) => (
@@ -79,17 +95,31 @@ export default async function Home() {
       <section className="bg-paper section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <SectionHeading
-              kicker="18 años haciendo historia"
-              title="El Tigre en los Medios"
-              highlight="Medios"
-              highlightColor="blue"
-            />
-            <p className="mt-6 max-w-2xl text-muted">
-              52 artículos nos han dedicado los principales medios del país
-              desde 2008. Nadie genera tanta conversación. Los reproducimos
-              completos, con gratitud.
-            </p>
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              <figure className="card-shadow order-last overflow-hidden rounded-2xl border border-ink/10 bg-paper lg:order-first">
+                <Image
+                  src="/abelardo/medios.webp"
+                  alt="Abelardo de la Espriella durante una entrevista"
+                  width={1024}
+                  height={512}
+                  sizes="(max-width: 1024px) 90vw, 45vw"
+                  className="h-full w-full object-cover"
+                />
+              </figure>
+              <div>
+                <SectionHeading
+                  kicker="18 años haciendo historia"
+                  title="El Tigre en los Medios"
+                  highlight="Medios"
+                  highlightColor="blue"
+                />
+                <p className="mt-6 max-w-2xl text-muted">
+                  52 artículos nos han dedicado los principales medios del país
+                  desde 2008. Nadie genera tanta conversación. Los reproducimos
+                  completos, con gratitud.
+                </p>
+              </div>
+            </div>
           </Reveal>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {noticias.map((noticia, i) => (
@@ -129,10 +159,23 @@ export default async function Home() {
       <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <div className="rounded-2xl border-2 border-red bg-navy-3 px-8 py-14 text-center md:px-16">
-              <p className="text-xs font-bold uppercase tracking-widest text-red">
-                El Tigre ha hablado
-              </p>
+            <div className="relative overflow-hidden rounded-2xl border-2 border-red bg-navy-3 px-8 py-14 text-center md:px-16">
+              <Image
+                src="/abelardo/cita-bg.webp"
+                alt=""
+                fill
+                aria-hidden="true"
+                sizes="(max-width: 1280px) 100vw, 1200px"
+                className="object-cover object-top"
+              />
+              <div
+                className="absolute inset-0 bg-navy-3/85"
+                aria-hidden="true"
+              />
+              <div className="relative">
+                <p className="text-xs font-bold uppercase tracking-widest text-red">
+                  El Tigre ha hablado
+                </p>
               <blockquote className="mx-auto mt-6 max-w-3xl text-[clamp(1.25rem,2.6vw,2rem)] font-extrabold leading-snug text-white">
                 <span className="text-yellow" aria-hidden="true">
                   &ldquo;
@@ -148,10 +191,11 @@ export default async function Home() {
                 Palabra entregada con la solemnidad que el momento exige · 7
                 compromisos documentados.
               </p>
-              <div className="mt-9">
-                <CtaButton href="/compromisos" variant="red">
-                  Conozca nuestros compromisos
-                </CtaButton>
+                <div className="mt-9">
+                  <CtaButton href="/compromisos" variant="red">
+                    Conozca nuestros compromisos
+                  </CtaButton>
+                </div>
               </div>
             </div>
           </Reveal>
@@ -249,23 +293,40 @@ export default async function Home() {
 
       {/* Ruge la Calle */}
       <section className="bg-paper section-padding">
-        <div className="mx-auto max-w-4xl px-6 text-center">
+        <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <SectionHeading
-              kicker="La calle ya canta"
-              title="Ruge la Calle"
-              highlight="Calle"
-              align="center"
-            />
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted">
-              <strong className="text-ink">CALLE</strong> es el sonido de
-              este momento histórico. Pulse play en el reproductor y escuche lo
-              que se canta ahí afuera.
-            </p>
-            <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-red">
-              El reproductor vive abajo a la izquierda — pulse play y siga
-              leyendo.
-            </p>
+            <div className="relative overflow-hidden rounded-2xl border border-ink/10 px-6 py-20 text-center md:px-16">
+              <Image
+                src="/abelardo/calle-bg.webp"
+                alt=""
+                fill
+                aria-hidden="true"
+                sizes="(max-width: 1280px) 100vw, 1200px"
+                className="object-cover object-center"
+              />
+              <div
+                className="absolute inset-0 bg-navy/80"
+                aria-hidden="true"
+              />
+              <div className="relative mx-auto max-w-2xl">
+                <p className="text-xs font-bold uppercase tracking-widest text-yellow">
+                  La calle ya canta
+                </p>
+                <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-extrabold uppercase text-white">
+                  Ruge la{" "}
+                  <span className="bg-yellow px-2 text-ink">Calle</span>
+                </h2>
+                <p className="mx-auto mt-8 text-lg leading-relaxed text-white/80">
+                  <strong className="text-white">CALLE</strong> es el sonido
+                  de este momento histórico. Pulse play en el reproductor y
+                  escuche lo que se canta ahí afuera.
+                </p>
+                <p className="mt-6 text-sm font-semibold uppercase tracking-widest text-yellow">
+                  El reproductor vive abajo a la izquierda — pulse play y siga
+                  leyendo.
+                </p>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>

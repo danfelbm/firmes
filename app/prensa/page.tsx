@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import Badge from "@/components/Badge";
 import NewsCard from "@/components/NewsCard";
@@ -63,20 +64,35 @@ export default async function PrensaPage({
       <section className="bg-cream section-padding">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <Badge>Sala de prensa · 2008–2026</Badge>
-            <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-ink">
-              El Tigre en los <span className="text-blue">Medios</span>
-            </h1>
-            <span
-              className="mt-5 block h-1 w-14 rounded-full bg-yellow"
-              aria-hidden="true"
-            />
-            <p className="mt-6 max-w-2xl text-muted">
-              Desde 2008, los principales medios del país le han dedicado al
-              Tigre 52 artículos, columnas e investigaciones. Una figura que no
-              deja a nadie indiferente. Los reproducimos completos, con sus
-              fuentes, con gratitud.
-            </p>
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              <div>
+                <Badge>Sala de prensa · 2008–2026</Badge>
+                <h1 className="mt-6 text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold text-ink">
+                  El Tigre en los <span className="text-blue">Medios</span>
+                </h1>
+                <span
+                  className="mt-5 block h-1 w-14 rounded-full bg-yellow"
+                  aria-hidden="true"
+                />
+                <p className="mt-6 max-w-2xl text-muted">
+                  Desde 2008, los principales medios del país le han dedicado al
+                  Tigre 52 artículos, columnas e investigaciones. Una figura que
+                  no deja a nadie indiferente. Los reproducimos completos, con
+                  sus fuentes, con gratitud.
+                </p>
+              </div>
+              <figure className="card-shadow overflow-hidden rounded-2xl border border-ink/10 bg-paper">
+                <Image
+                  src="/abelardo/prensa-hdr.webp"
+                  alt="Abelardo de la Espriella atendiendo a la prensa"
+                  width={1100}
+                  height={619}
+                  priority
+                  sizes="(max-width: 1024px) 90vw, 45vw"
+                  className="h-full w-full object-cover"
+                />
+              </figure>
+            </div>
           </Reveal>
 
           <Reveal delay={120}>
