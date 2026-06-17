@@ -17,7 +17,7 @@ const items: QuickItem[] = [
   { href: "/compromisos", label: "Compromisos", icon: Scale },
   { href: "/mensaje-a-las-victimas", label: "Víctimas", icon: Flower2 },
   { href: "/equipo-salud", label: "Equipo de Salud", icon: HeartPulse },
-  { href: "/centro-de-documentacion", label: "Documentación", icon: Archive },
+  { href: "/centro-de-documentacion", label: "Fuentes", icon: Archive },
 ];
 
 export default function QuickAccessBar() {

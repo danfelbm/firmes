@@ -24,5 +24,5 @@ export const NAV_LINKS = [
 
 export const ARCHIVO_LINK = {
   href: "/centro-de-documentacion",
-  label: "Documentación",
+  label: "Fuentes",
 } as const;
