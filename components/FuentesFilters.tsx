@@ -7,7 +7,6 @@ import { useState } from "react";
 import type { Categoria } from "@/lib/enlaces";
 
 type FuentesFiltersProps = {
-  temas: string[];
   tipos: Categoria[];
   anios: number[];
 };
@@ -19,21 +18,18 @@ const selectClass =
  * Filtros del Centro de Documentación: buscador + selects (tema, tipo, año).
  * Mismo patrón que NewsFilters: navega por searchParams con router.replace.
  */
-export default function FuentesFilters({
-  temas,
-  tipos,
-  anios,
-}: FuentesFiltersProps) {
+export default function FuentesFilters({ tipos, anios }: FuentesFiltersProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
   const [q, setQ] = useState(searchParams.get("q") ?? "");
-  const tema = searchParams.get("tema") ?? "";
   const tipo = searchParams.get("tipo") ?? "";
   const anio = searchParams.get("anio") ?? "";
 
+  // El tema se controla con los chips, pero su presencia cuenta como filtro
+  // activo para mostrar el botón "Limpiar".
   const hayFiltrosActivos = Boolean(
-    searchParams.get("q") || tema || tipo || anio,
+    searchParams.get("q") || searchParams.get("tema") || tipo || anio,
   );
 
   /** Aplica cambios sobre los filtros actuales y resetea la paginación. */
@@ -87,20 +83,6 @@ export default function FuentesFilters({
         </form>
 
         <div className="flex flex-wrap items-center gap-3">
-          <select
-            value={tema}
-            onChange={(e) => aplicar({ tema: e.target.value })}
-            aria-label="Filtrar por tema"
-            className={selectClass}
-          >
-            <option value="">Todos los temas</option>
-            {temas.map((t) => (
-              <option key={t} value={t}>
-                {t}
-              </option>
-            ))}
-          </select>
-
           <select
             value={tipo}
             onChange={(e) => aplicar({ tipo: e.target.value })}

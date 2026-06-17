@@ -6,13 +6,14 @@ import EnlaceCard from "@/components/EnlaceCard";
 import FuentesFilters from "@/components/FuentesFilters";
 import Pagination from "@/components/Pagination";
 import Reveal from "@/components/Reveal";
+import TemaChips from "@/components/TemaChips";
+import VolverArriba from "@/components/VolverArriba";
 import {
   anioDe,
   categoriaDeRecurso,
   CATEGORIAS,
   coincideBusqueda,
   ICONOS_POR_CATEGORIA,
-  normalizar,
   type Categoria,
 } from "@/lib/enlaces";
 import { getEnlaces, getTemasEnlaces, type Enlace } from "@/lib/queries";
@@ -28,11 +29,6 @@ const PER_PAGE = 20;
 type CentroDeDocumentacionPageProps = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
-
-/** id de ancla a partir de un tema (para el índice de saltos). */
-function anclaDeTema(tema: string): string {
-  return `tema-${normalizar(tema).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
-}
 
 /** Orden por fecha descendente, con los sin fecha al final. */
 function porFechaDesc(a: Enlace, b: Enlace): number {
@@ -127,6 +123,13 @@ export default async function CentroDeDocumentacionPage({
     anio: anio ? String(anio) : undefined,
   };
 
+  // Filtros que los chips de tema conservan al cambiar/limpiar el tema.
+  const filtrosSinTema = {
+    q: q || undefined,
+    tipo,
+    anio: anio ? String(anio) : undefined,
+  };
+
   return (
     <main>
       {/* Encabezado */}
@@ -172,33 +175,21 @@ export default async function CentroDeDocumentacionPage({
 
           <Reveal delay={100}>
             <div className="mt-10">
-              <FuentesFilters
-                temas={temas}
-                tipos={tiposPresentes}
-                anios={anios}
-              />
+              <FuentesFilters tipos={tiposPresentes} anios={anios} />
             </div>
           </Reveal>
 
-          {/* Índice de temas (solo en la vista por defecto) */}
-          {!hayFiltros ? (
-            <Reveal delay={150}>
-              <nav
-                aria-label="Saltar a un tema"
-                className="mt-6 flex flex-wrap gap-2"
-              >
-                {temasConteo.map(({ tema: t, count }) => (
-                  <a
-                    key={t}
-                    href={`#${anclaDeTema(t)}`}
-                    className="rounded-full border border-ink/15 bg-paper px-3 py-1.5 text-sm font-semibold text-ink transition-colors hover:border-yellow"
-                  >
-                    {t} <span className="text-muted">({count})</span>
-                  </a>
-                ))}
-              </nav>
-            </Reveal>
-          ) : null}
+          {/* Chips de tema: filtran (no son anclas) */}
+          <Reveal delay={150}>
+            <div className="mt-6">
+              <TemaChips
+                temas={temasConteo}
+                total={total}
+                activo={tema}
+                conservar={filtrosSinTema}
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -207,17 +198,25 @@ export default async function CentroDeDocumentacionPage({
         <div className="mx-auto max-w-5xl px-6">
           {hayFiltros ? (
             <>
-              <p className="text-sm font-semibold uppercase tracking-wide text-muted">
-                {filtrados.length}{" "}
-                {filtrados.length === 1
-                  ? "fuente encontrada"
-                  : "fuentes encontradas"}
-                {notasFiltradas.length
-                  ? ` · ${notasFiltradas.length} ${
-                      notasFiltradas.length === 1 ? "nota" : "notas"
-                    }`
-                  : ""}
-              </p>
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="text-sm font-semibold uppercase tracking-wide text-muted">
+                  {filtrados.length}{" "}
+                  {filtrados.length === 1
+                    ? "fuente encontrada"
+                    : "fuentes encontradas"}
+                  {notasFiltradas.length
+                    ? ` · ${notasFiltradas.length} ${
+                        notasFiltradas.length === 1 ? "nota" : "notas"
+                      }`
+                    : ""}
+                </p>
+                <Link
+                  href="/centro-de-documentacion"
+                  className="text-sm font-bold text-blue transition-colors hover:text-red"
+                >
+                  Limpiar filtros ✕
+                </Link>
+              </div>
 
               {filtrados.length || notasFiltradas.length ? (
                 <>
@@ -272,11 +271,7 @@ export default async function CentroDeDocumentacionPage({
             <>
               <div className="flex flex-col gap-16">
                 {grupos.map(({ tema: t, enlaces: enlacesTema }) => (
-                  <div
-                    key={t}
-                    id={anclaDeTema(t)}
-                    className="scroll-mt-28"
-                  >
+                  <div key={t}>
                     <h2 className="yellow-tick text-2xl font-extrabold text-ink">
                       {t}{" "}
                       <span className="text-base font-semibold text-muted">
@@ -315,6 +310,8 @@ export default async function CentroDeDocumentacionPage({
           )}
         </div>
       </section>
+
+      <VolverArriba />
     </main>
   );
 }
