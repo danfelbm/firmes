@@ -6,7 +6,7 @@ import "./globals.css";
 import AudioDock from "@/components/AudioDock";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import WhatsAppButton from "@/components/WhatsAppButton";
+// import WhatsAppButton from "@/components/WhatsAppButton"; // oculto temporalmente
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -46,7 +46,8 @@ export default function RootLayout({
         {children}
         <Footer />
         <AudioDock />
-        <WhatsAppButton />
+        {/* Oculto temporalmente; reactivar quitando el comentario. */}
+        {/* <WhatsAppButton /> */}
       </body>
     </html>
   );
